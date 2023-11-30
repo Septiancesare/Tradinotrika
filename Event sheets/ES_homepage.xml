@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES_homepage</name>
+    <events>
+        <include>ES_GLobalLayout</include>
+        <event-block sid="525149020983393">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="549506230491024" type="System">
+                    <param id="0" name="Layer">&quot;popup&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="666667490507407">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="248823474313243" type="Touch">
+                            <param id="0" name="Object">btnmulai</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="870913387014734" type="System">
+                            <param id="0" name="Layout">lvlpage</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="747512179548764">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="350079678345510" type="Touch">
+                            <param id="0" name="Object">btnbuku</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="238743469564941" type="System">
+                            <param id="0" name="Layout">bukusakti</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="534351266108383">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="597027084445256" type="Touch">
+                            <param id="0" name="Object">btninfo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="352741847445268" type="System">
+                            <param id="0" name="Layout">infopage</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="470276782972737">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="732407605152114" type="Touch">
+                            <param id="0" name="Object">btnkeluar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Close" sid="120291353605922" type="Browser" />
+                    </actions>
+                </event-block>
+                <event-block sid="833478786968946">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="460727568717323" type="Touch">
+                            <param id="0" name="Object">btnaboutgame</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="927852360794255" type="aboutgame">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="932841173558176" type="System">
+                            <param id="0" name="Layer">&quot;popup&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="394832261310309">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="206706587371318" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="378565608245473" type="btnclose">
+                    <param id="0" name="Pin to">aboutgame</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="858188619081476" type="System">
+                    <param id="0" name="Layer">&quot;popup&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="920706657776392">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="155294866250508" type="System">
+                    <param id="0" name="Layer">&quot;popup&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="689726647838581">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="701447022140471" type="Touch">
+                            <param id="0" name="Object">btnclose</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="11" name="Reverse" sid="381039153788179" type="aboutgame">
+                            <param id="0" name="Reverse mode">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="880710485376964" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="324820282883055" type="System">
+                            <param id="0" name="Layer">&quot;popup&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="731995908580054" title="sound" />
+        <event-block sid="833425962414257">
+            <conditions>
+                <condition id="3" name="On touched object" sid="809891119259298" type="Touch">
+                    <param id="0" name="Object">btnmusik</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="319688437584793">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="725893858181619" type="System">
+                            <param id="0" name="Variable">lagu</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="220158221492899" type="System">
+                            <param id="0" name="Variable">lagu</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="373111237685452" type="btnmusik">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="317515154713893">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="735274233081148" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="381128304685882" type="System">
+                            <param id="0" name="Variable">lagu</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="840249354116014" type="btnmusik">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

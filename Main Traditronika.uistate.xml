@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">Game1_LO</layout>
+        <layout order="3">homepage</layout>
+        <layout order="5">lvlpage</layout>
+        <layout order="7">storypage</layout>
+        <layout order="9">Layout Contoh</layout>
+        <layout order="10">bukusakti</layout>
+        <layout order="11">bsAceh_1</layout>
+        <layout order="14">infopage</layout>
+        <event-sheet active="1" order="2">Game1_EV</event-sheet>
+        <event-sheet order="4">ES_homepage</event-sheet>
+        <event-sheet order="6">ES_lvlpage</event-sheet>
+        <event-sheet order="8">ES_storypage</event-sheet>
+        <event-sheet order="12">ES_bukusakti</event-sheet>
+        <event-sheet order="13">ES_bsAceh1</event-sheet>
+        <event-sheet order="15">ES_infopage</event-sheet>
+        <event-sheet order="16">ES_GLobalLayout</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/BackgroundInGame/" />
+        <folder expanded="1" path="animation-folder/tile/" />
+        <folder expanded="1" path="animation-folder/Idle/" />
+        <folder expanded="1" path="animation-folder/btnMenu/" />
+        <folder expanded="1" path="animation-folder/btnmulai/" />
+        <folder expanded="1" path="animation-folder/btnbuku/" />
+        <folder expanded="1" path="animation-folder/btnkeluar/" />
+        <folder expanded="1" path="animation-folder/btnmusik/" />
+        <folder expanded="1" path="animation-folder/btninfo/" />
+        <folder expanded="1" path="animation-folder/btnaboutgame/" />
+        <folder expanded="1" path="animation-folder/background/" />
+        <folder expanded="1" path="animation-folder/txtjudul/" />
+        <folder expanded="1" path="animation-folder/btnback/" />
+        <folder expanded="1" path="animation-folder/iconlvl/" />
+        <folder expanded="1" path="animation-folder/lvl1/" />
+        <folder expanded="1" path="animation-folder/lvl2/" />
+        <folder expanded="1" path="animation-folder/lvl3/" />
+        <folder expanded="1" path="animation-folder/storyboard/" />
+        <folder expanded="1" path="animation-folder/btnplay/" />
+        <folder expanded="1" path="animation-folder/iconAceh/" />
+        <folder expanded="1" path="animation-folder/iconterkunci/" />
+        <folder expanded="1" path="animation-folder/konten1/" />
+        <folder expanded="1" path="animation-folder/konten2/" />
+        <folder expanded="1" path="animation-folder/konten3/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/m1/" />
+        <folder expanded="1" path="animation-folder/m2/" />
+        <folder expanded="1" path="animation-folder/m3/" />
+        <folder expanded="1" path="animation-folder/nextbtn/" />
+        <folder expanded="1" path="animation-folder/beforebtn2/" />
+        <folder expanded="1" path="animation-folder/info1/" />
+        <folder expanded="1" path="animation-folder/info2/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/m4/" />
+        <folder expanded="1" path="animation-folder/m5/" />
+        <folder expanded="1" path="animation-folder/aboutgame/" />
+        <folder expanded="1" path="animation-folder/btnclose/" />
+        <folder expanded="1" path="animation-folder/bghitam/" />
+        <folder expanded="1" path="animation-folder/popUpPause/" />
+        <folder expanded="1" path="animation-folder/tombolUlangiPause/" />
+        <folder expanded="1" path="animation-folder/tombolPlayDiPause/" />
+        <folder expanded="1" path="animation-folder/tombolKeluarDiPause/" />
+    </folders-expanded>
+</c2uistate>

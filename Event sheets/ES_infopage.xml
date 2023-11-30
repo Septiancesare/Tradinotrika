@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES_infopage</name>
+    <events>
+        <variable constant="0" name="move2" sid="418807529240432" static="0" type="number">1</variable>
+        <event-block sid="362755288823736">
+            <conditions>
+                <condition id="3" name="On touched object" sid="410744099351475" type="Touch">
+                    <param id="0" name="Object">btnback</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="880546353138673" type="System">
+                    <param id="0" name="Layout">homepage</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="910412257504325">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="131989534698127" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="105118442188995" type="info1">
+                    <param id="0" name="Object">Sprite2</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="574333152717705" type="info2">
+                    <param id="0" name="Object">Sprite2</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="411616623129180">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="553524970073334" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="944374986702593" type="Sprite2">
+                    <param id="0" name="X">lerp(Sprite2.X, m4.X, 0.08)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="889743879200917">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="357373198616379" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="588426771917369" type="Sprite2">
+                    <param id="0" name="X">lerp(Sprite2.X, m5.X, 0.08)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="217397983803702">
+            <conditions>
+                <condition id="3" name="On key released" sid="644615791774558" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="342342970425362" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="453978825414344" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="783535007256761">
+            <conditions>
+                <condition id="3" name="On key released" sid="325479010641899" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="440099431272581" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="752446591778590" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="827818122283600">
+            <conditions>
+                <condition id="3" name="On touched object" sid="948326593623670" type="Touch">
+                    <param id="0" name="Object">nextbtn</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="725338591527960" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="620360650533065" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="738246511302732">
+            <conditions>
+                <condition id="3" name="On touched object" sid="235613024152758" type="Touch">
+                    <param id="0" name="Object">beforebtn2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="295106983436968" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="940451982005830" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,912 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Main Traditronika</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>smcng10mdzfz</unique-id>
+    <saved-with-version>27700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1136</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="BackgroundInGame" sid="380627943194463">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="511576554444004" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\HP\Downloads\Background InGame.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="772162507997824">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="994509942329912">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\Tiles\tile2.png" />
+        </object-type>
+        <object-type name="tile" sid="922260550943592">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="342521513097202">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849924021332576" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\Tiles\tile13.png">
+                        <collision-poly>
+                            <point x="0.0234375" y="0.0322581" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.806452" />
+                            <point x="0.304688" y="0.580645" />
+                            <point x="0.09375" y="0.494624" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\Tiles\tile14.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\Tiles\tile15.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.976563" y="0.0322581" />
+                            <point x="0.90625" y="0.494624" />
+                            <point x="0.695313" y="0.580645" />
+                            <point x="0.5" y="0.806452" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Idle" sid="854399063176690">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="434240179174193">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="623092814780303">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="10" loop="1" name="stand" pingpong="0" repeatcount="1" repeatto="0" sid="238544825698988" speed="8">
+                    <frame duration="1" hotspotX="0.90027" hotspotY="0.516539" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Idle (2).png" />
+                    <frame duration="1" hotspotX="0.90027" hotspotY="0.520202" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Idle (1).png" />
+                    <frame duration="1" hotspotX="0.897574" hotspotY="0.515306" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Idle (10).png" />
+                    <frame duration="1" hotspotX="0.9" hotspotY="0.511568" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Idle (3).png" />
+                    <frame duration="1" hotspotX="0.899729" hotspotY="0.507772" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Idle (4).png" />
+                    <frame duration="1" hotspotX="0.894595" hotspotY="0.505208" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Idle (5).png" />
+                    <frame duration="1" hotspotX="0.891599" hotspotY="0.503916" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Idle (6).png" />
+                    <frame duration="1" hotspotX="0.886179" hotspotY="0.502618" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Idle (7).png" />
+                    <frame duration="1" hotspotX="0.889189" hotspotY="0.506494" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Idle (8).png" />
+                    <frame duration="1" hotspotX="0.894595" hotspotY="0.511568" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Idle (9).png" />
+                </animation>
+                <animation framecount="11" loop="1" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="872791515761142" speed="5">
+                    <frame duration="1" hotspotX="0.735849" hotspotY="0.470752" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Run (1).png" />
+                    <frame duration="1" hotspotX="0.743719" hotspotY="0.496296" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Run (2).png" />
+                    <frame duration="1" hotspotX="0.781176" hotspotY="0.613757" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Run (3).png" />
+                    <frame duration="1" hotspotX="0.743719" hotspotY="0.479714" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Run (4).png" />
+                    <frame duration="1" hotspotX="0.741093" hotspotY="0.460274" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Run (5).png" />
+                    <frame duration="1" hotspotX="0.74495" hotspotY="0.505" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Run (6).png" />
+                    <frame duration="1" hotspotX="0.761538" hotspotY="0.562654" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Run (7).png" />
+                    <frame duration="1" hotspotX="0.741855" hotspotY="0.46934" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Run (8).png" />
+                    <frame duration="1" hotspotX="0.93913" hotspotY="0.533175" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Walk (8).png" />
+                    <frame duration="1" hotspotX="0.942029" hotspotY="0.520737" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Walk (9).png" />
+                    <frame duration="1" hotspotX="0.922438" hotspotY="0.502347" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Walk (10).png" />
+                </animation>
+                <animation framecount="12" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="275857426745721" speed="5">
+                    <frame duration="1" hotspotX="0.90027" hotspotY="0.520202" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Jump (1).png" />
+                    <frame duration="1" hotspotX="0.703125" hotspotY="0.439528" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Jump (2).png" />
+                    <frame duration="1" hotspotX="0.701571" hotspotY="0.432836" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Jump (3).png" />
+                    <frame duration="1" hotspotX="0.711688" hotspotY="0.415144" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Jump (4).png" />
+                    <frame duration="1" hotspotX="0.737349" hotspotY="0.538462" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Jump (5).png" />
+                    <frame duration="1" hotspotX="0.737981" hotspotY="0.546366" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Jump (6).png" />
+                    <frame duration="1" hotspotX="0.742788" hotspotY="0.55443" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Jump (7).png" />
+                    <frame duration="1" hotspotX="0.740385" hotspotY="0.547739" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Jump (8).png" />
+                    <frame duration="1" hotspotX="0.73913" hotspotY="0.538462" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Jump (9).png" />
+                    <frame duration="1" hotspotX="0.762376" hotspotY="0.46861" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Jump (10).png" />
+                    <frame duration="1" hotspotX="0.761671" hotspotY="0.468293" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Jump (11).png" />
+                    <frame duration="1" hotspotX="0.781638" hotspotY="0.488127" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Jump (12).png" />
+                </animation>
+                <animation framecount="1" loop="0" name="fall" pingpong="0" repeatcount="1" repeatto="0" sid="513832891413242" speed="5">
+                    <frame duration="1" hotspotX="0.754902" hotspotY="0.469274" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\KarakterDino\Dino\Dead (1).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="678976536880855">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="233992200639088">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="861564078081355">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\Tiles\tile2.png" />
+        </object-type>
+        <object-type name="Tilemap" sid="981977827501421">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\Tiles\tile2.png" />
+            <tiles />
+        </object-type>
+        <object-type name="TiledBackground3" sid="931083817389954">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="833662881685711">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Game Traditronika\Tiles\tile2.png" />
+        </object-type>
+        <object-type name="btnMenu" sid="459916170231099">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="785775202324466" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Aset\Aset\21.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="733657410090106">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="btnmulai" sid="111473215693819">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="474551289108393">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="815365777026319" speed="5">
+                    <frame duration="1" hotspotX="0.501241" hotspotY="0.503497" original-source="E:\semester 3\PraktikMultimedia1\ASET TOMBOL\ASET TOMBOL\1.png">
+                        <collision-poly>
+                            <point x="0.0521092" y="0.146853" />
+                            <point x="0.498759" y="0.0769231" />
+                            <point x="0.947891" y="0.146853" />
+                            <point x="1" y="0.496504" />
+                            <point x="0.962779" y="0.895105" />
+                            <point x="0.498759" y="1" />
+                            <point x="0.0372208" y="0.895105" />
+                            <point x="0" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnbuku" sid="703931069766282">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="934486006176336">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="387810139496590" speed="5">
+                    <frame duration="1" hotspotX="0.501241" hotspotY="0.503497" original-source="E:\semester 3\PraktikMultimedia1\ASET TOMBOL\ASET TOMBOL\2.png">
+                        <collision-poly>
+                            <point x="0.0521092" y="0.146853" />
+                            <point x="0.498759" y="0.0769231" />
+                            <point x="0.947891" y="0.146853" />
+                            <point x="1" y="0.496504" />
+                            <point x="0.962779" y="0.895105" />
+                            <point x="0.498759" y="1" />
+                            <point x="0.0372208" y="0.895105" />
+                            <point x="0" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnkeluar" sid="265732953054524">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="456985817367871">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="656299667124978" speed="5">
+                    <frame duration="1" hotspotX="0.501241" hotspotY="0.503497" original-source="E:\semester 3\PraktikMultimedia1\ASET TOMBOL\ASET TOMBOL\3.png">
+                        <collision-poly>
+                            <point x="0.0521092" y="0.146853" />
+                            <point x="0.498759" y="0.0769231" />
+                            <point x="0.947891" y="0.146853" />
+                            <point x="1" y="0.496504" />
+                            <point x="0.962779" y="0.895105" />
+                            <point x="0.498759" y="1" />
+                            <point x="0.0372208" y="0.895105" />
+                            <point x="0" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnmusik" sid="582386005534573">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="771619116107942" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501033" original-source="D:\Kuliah PTIK\Tugas Kuliah\Semester 3\Praktikum MultimediaI\Aset\Aset\20.png">
+                        <collision-poly>
+                            <point x="0.172828" y="0.135331" />
+                            <point x="0.5" y="0.00206612" />
+                            <point x="0.828096" y="0.134298" />
+                            <point x="0.999076" y="0.501033" />
+                            <point x="0.827172" y="0.866736" />
+                            <point x="0.5" y="0.998967" />
+                            <point x="0.173752" y="0.865702" />
+                            <point x="0.000924214" y="0.501033" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502062" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\17.png">
+                        <collision-poly>
+                            <point x="0.170979" y="0.135051" />
+                            <point x="0.5" y="0.00206182" />
+                            <point x="0.828096" y="0.136082" />
+                            <point x="0.999076" y="0.502062" />
+                            <point x="0.827172" y="0.867011" />
+                            <point x="0.5" y="0.998969" />
+                            <point x="0.172828" y="0.867011" />
+                            <point x="0.000924214" y="0.502062" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btninfo" sid="659421651917977">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="950354273616569" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\18.png">
+                        <collision-poly>
+                            <point x="0.172222" y="0.172222" />
+                            <point x="0.5" y="0.0527778" />
+                            <point x="0.828704" y="0.171296" />
+                            <point x="1" y="0.5" />
+                            <point x="0.827778" y="0.827778" />
+                            <point x="0.5" y="0.946296" />
+                            <point x="0.173148" y="0.826852" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnaboutgame" sid="270249820095251">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="282363925450640" speed="5">
+                    <frame duration="1" hotspotX="0.598684" hotspotY="-1.08088" original-source="E:\semester 3\PraktikMultimedia1\aset\TRADITRONICA (1).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="background" sid="507180420328514">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="169275675653492" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\aset\Background Home Page.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txtjudul" sid="773553209564251">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753444597449090" speed="5">
+                    <frame duration="1" hotspotX="0.517353" hotspotY="3.17881" original-source="E:\semester 3\PraktikMultimedia1\aset\TRADITRONICA.png">
+                        <collision-poly>
+                            <point x="0.517353" y="0.0596027" />
+                            <point x="0.578692" y="0.900662" />
+                            <point x="0.517353" y="0.986755" />
+                            <point x="0.444713" y="0.993378" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnback" sid="743313458978924">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="178617318052167">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="999642660055579" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\5.png">
+                        <collision-poly>
+                            <point x="0.0796296" y="0.0796296" />
+                            <point x="0.5" y="0.00740741" />
+                            <point x="0.92037" y="0.0796296" />
+                            <point x="0.992593" y="0.5" />
+                            <point x="0.92037" y="0.92037" />
+                            <point x="0.5" y="0.992593" />
+                            <point x="0.0796296" y="0.92037" />
+                            <point x="0.00740741" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="iconlvl" sid="931588951652977">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="418615909558927" speed="5">
+                    <frame duration="1" hotspotX="0.501241" hotspotY="0.503497" original-source="E:\semester 3\PraktikMultimedia1\ASET TOMBOL\ASET TOMBOL\5.png">
+                        <collision-poly>
+                            <point x="0.101737" y="0.286713" />
+                            <point x="0.498759" y="0.020979" />
+                            <point x="0.898263" y="0.286713" />
+                            <point x="0.880893" y="0.664336" />
+                            <point x="0.498759" y="0.902098" />
+                            <point x="0.121588" y="0.657343" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lvl1" sid="732585776356841">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="635610226928529" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\bintang icon level.png">
+                        <collision-poly>
+                            <point x="0.202778" y="0.202778" />
+                            <point x="0.5" y="0.062963" />
+                            <point x="0.797222" y="0.202778" />
+                            <point x="0.980556" y="0.5" />
+                            <point x="0.947222" y="0.947222" />
+                            <point x="0.5" y="0.990741" />
+                            <point x="0.0527778" y="0.947222" />
+                            <point x="0.0203704" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lvl2" sid="945480528847094">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="539604267699208" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\bintang icon level (2).png">
+                        <collision-poly>
+                            <point x="0.203704" y="0.203704" />
+                            <point x="0.5" y="0.0638889" />
+                            <point x="0.797222" y="0.202778" />
+                            <point x="0.97963" y="0.5" />
+                            <point x="0.946296" y="0.946296" />
+                            <point x="0.5" y="0.989815" />
+                            <point x="0.0537037" y="0.946296" />
+                            <point x="0.0212963" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lvl3" sid="891662765342463">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="537143099360202" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\13.png">
+                        <collision-poly>
+                            <point x="0.197222" y="0.197222" />
+                            <point x="0.5" y="0.0546296" />
+                            <point x="0.802778" y="0.197222" />
+                            <point x="0.989815" y="0.5" />
+                            <point x="0.955556" y="0.955556" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0444444" y="0.955556" />
+                            <point x="0.0111111" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="storyboard" sid="330242781578538">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="524394093909350" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\16.png">
+                        <collision-poly>
+                            <point x="0.161111" y="0.161111" />
+                            <point x="0.838889" y="0.161111" />
+                            <point x="0.984259" y="0.5" />
+                            <point x="0.838889" y="0.838889" />
+                            <point x="0.161111" y="0.838889" />
+                            <point x="0.0157407" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnplay" sid="383110333494450">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="791964537233488">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="826826564259746" speed="5">
+                    <frame duration="1" hotspotX="0.501241" hotspotY="0.503497" original-source="E:\semester 3\PraktikMultimedia1\ASET TOMBOL\ASET TOMBOL\4.png">
+                        <collision-poly>
+                            <point x="0.188586" y="0.531469" />
+                            <point x="0.498759" y="0.0699301" />
+                            <point x="0.796526" y="0.573427" />
+                            <point x="0.784119" y="0.391608" />
+                            <point x="0.498759" y="0.972028" />
+                            <point x="0.188586" y="0.468531" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBukusakti" sid="162768530113708">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="iconAceh" sid="324687501018486">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808008306148419" speed="5">
+                    <frame duration="1" hotspotX="0.499074" hotspotY="0.499074" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\15.png">
+                        <collision-poly>
+                            <point x="0.0425926" y="0.0425926" />
+                            <point x="0.499074" y="0.000925926" />
+                            <point x="0.956481" y="0.0416667" />
+                            <point x="0.999074" y="0.499074" />
+                            <point x="0.957407" y="0.957407" />
+                            <point x="0.499074" y="0.999074" />
+                            <point x="0.0416667" y="0.956481" />
+                            <point x="0.000925926" y="0.499074" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="iconterkunci" sid="135339661171351">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="931562869815821" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\14.png">
+                        <collision-poly>
+                            <point x="0.0407407" y="0.0407407" />
+                            <point x="0.5" y="0" />
+                            <point x="0.958333" y="0.0416667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.958333" y="0.958333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0416667" y="0.958333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="konten1" sid="802197155492968">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="874441064391707" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\aset\TRADITRONICA (2).png">
+                        <collision-poly>
+                            <point x="0.00332594" y="0.459302" />
+                            <point x="0.5" y="0.00290698" />
+                            <point x="0.996674" y="0.459302" />
+                            <point x="0.996674" y="0.540698" />
+                            <point x="0.5" y="0.997093" />
+                            <point x="0.00332594" y="0.540698" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="konten2" sid="356479421246903">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984734974023875" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\aset\TRADITRONICA (3).png">
+                        <collision-poly>
+                            <point x="0.00332594" y="0.459302" />
+                            <point x="0.5" y="0.00290698" />
+                            <point x="0.996674" y="0.459302" />
+                            <point x="0.996674" y="0.540698" />
+                            <point x="0.5" y="0.997093" />
+                            <point x="0.00332594" y="0.540698" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="konten3" sid="860899912631671">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153819070617308" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\aset\TRADITRONICA (4).png">
+                        <collision-poly>
+                            <point x="0.00332594" y="0.459302" />
+                            <point x="0.5" y="0.00290698" />
+                            <point x="0.996674" y="0.459302" />
+                            <point x="0.996674" y="0.540698" />
+                            <point x="0.5" y="0.997093" />
+                            <point x="0.00332594" y="0.540698" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="532463451419384">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="633401948718784" speed="5">
+                    <frame duration="1" hotspotX="0.00396825" hotspotY="0.479167">
+                        <image-point name="Imagepoint 1" x="0.503968" y="0.5" />
+                        <image-point name="Imagepoint 2" x="1" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="m1" sid="234031204574962">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="723884834343571" speed="5">
+                    <frame duration="1" hotspotX="0.483333" hotspotY="0.507937" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="m2" sid="612204329598151">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="564800342160089" speed="5">
+                    <frame duration="1" hotspotX="0.483333" hotspotY="0.507937" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="m3" sid="644012757678040">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="516845514994045" speed="5">
+                    <frame duration="1" hotspotX="0.483333" hotspotY="0.507937" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nextbtn" sid="579159791566040">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="157005071995287" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\24.png">
+                        <collision-poly>
+                            <point x="0.285582" y="0.139752" />
+                            <point x="0.5" y="0.130435" />
+                            <point x="0.753235" y="0.0745342" />
+                            <point x="0.999076" y="0.5" />
+                            <point x="0.753235" y="0.925466" />
+                            <point x="0.5" y="0.869565" />
+                            <point x="0.285582" y="0.860248" />
+                            <point x="0.000924214" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="beforebtn2" sid="179564759485249">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="830544924323528" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\24.png">
+                        <collision-poly>
+                            <point x="0.999076" y="0.5" />
+                            <point x="0.714418" y="0.860248" />
+                            <point x="0.5" y="0.869565" />
+                            <point x="0.246765" y="0.925466" />
+                            <point x="0.000923991" y="0.5" />
+                            <point x="0.246765" y="0.0745342" />
+                            <point x="0.5" y="0.130435" />
+                            <point x="0.714418" y="0.139752" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="456931854364303">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="info1" sid="243001188671075">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="610547618123033" speed="5">
+                    <frame duration="1" hotspotX="0.474368" hotspotY="0.499522" original-source="E:\semester 3\PraktikMultimedia1\aset\TRADITRONICA (6).png">
+                        <collision-poly>
+                            <point x="0.000722022" y="0.274117" />
+                            <point x="0.474368" y="0.0200573" />
+                            <point x="0.999278" y="0.206304" />
+                            <point x="0.999278" y="0.792741" />
+                            <point x="0.474368" y="0.99809" />
+                            <point x="0.000722022" y="0.724928" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="info2" sid="239891528001630">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881944295263065" speed="5">
+                    <frame duration="1" hotspotX="0.474368" hotspotY="0.499522" original-source="E:\semester 3\PraktikMultimedia1\aset\TRADITRONICA (7).png">
+                        <collision-poly>
+                            <point x="0.000722022" y="0.274117" />
+                            <point x="0.474368" y="0.0200573" />
+                            <point x="0.999278" y="0.206304" />
+                            <point x="0.999278" y="0.792741" />
+                            <point x="0.474368" y="0.99809" />
+                            <point x="0.000722022" y="0.724928" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="234846055767076">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="253870162911572" speed="5">
+                    <frame duration="1" hotspotX="0.00396825" hotspotY="0.479167">
+                        <image-point name="Imagepoint 1" x="1.00794" y="0.395833" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="m4" sid="664515375840202">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="877167584190509" speed="5">
+                    <frame duration="1" hotspotX="0.483333" hotspotY="0.507937" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="m5" sid="192521769007160">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="567496905547206" speed="5">
+                    <frame duration="1" hotspotX="0.483333" hotspotY="0.507937" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="aboutgame" sid="243528905234044">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="511479697481890">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="174828408652463" speed="0">
+                    <frame duration="1" hotspotX="0.288809" hotspotY="0.305635" original-source="E:\semester 3\PraktikMultimedia1\aset\TRADITRONICA (8).png">
+                        <collision-poly>
+                            <point x="0.000722022" y="0.274117" />
+                            <point x="0.474368" y="0.0200573" />
+                            <point x="0.999278" y="0.206304" />
+                            <point x="0.999278" y="0.792741" />
+                            <point x="0.474368" y="0.99809" />
+                            <point x="0.000722022" y="0.724928" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnclose" sid="449548909170827">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="109247845559980">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="244218544950476" speed="5">
+                    <frame duration="1" hotspotX="0.497409" hotspotY="1.49223" original-source="E:\semester 3\PraktikMultimedia1\aset\TRADITRONICA (9).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bghitam" sid="913704362603150">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="221064296940380" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.389965" y="0.304688" />
+                            <point x="0.610035" y="0.304688" />
+                            <point x="0.610035" y="0.695313" />
+                            <point x="0.389965" y="0.695313" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="198443690652918">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Audio" sid="436540619041797">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="popUpPause" sid="327854601832708">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="940614768037626" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\ZZZ Yosef\00 Koleyah\Semester 3\Praktikum Multimedia 1\Pertemuan 8\Aset Pop Up\1.png">
+                        <collision-poly>
+                            <point x="0.0393333" y="0.0655556" />
+                            <point x="0.5" y="0.0488889" />
+                            <point x="0.961333" y="0.0644444" />
+                            <point x="0.875333" y="0.5" />
+                            <point x="0.867333" y="0.934444" />
+                            <point x="0.5" y="0.951111" />
+                            <point x="0.122" y="0.941111" />
+                            <point x="0.124667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tombolUlangiPause" sid="790794175523380">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="480299343923117" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\ZZZ Yosef\00 Koleyah\Semester 3\Praktikum Multimedia 1\Pertemuan 8\Aset\6.png">
+                        <collision-poly>
+                            <point x="0.0731481" y="0.0731481" />
+                            <point x="0.5" y="0" />
+                            <point x="0.926852" y="0.0731481" />
+                            <point x="1" y="0.5" />
+                            <point x="0.926852" y="0.926852" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0731481" y="0.926852" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tombolPlayDiPause" sid="818211331309230">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="173040030604514" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\ZZZ Yosef\00 Koleyah\Semester 3\Praktikum Multimedia 1\Pertemuan 8\Aset\7.png">
+                        <collision-poly>
+                            <point x="0.0731481" y="0.0731481" />
+                            <point x="0.5" y="0" />
+                            <point x="0.926852" y="0.0731481" />
+                            <point x="1" y="0.5" />
+                            <point x="0.926852" y="0.926852" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0731481" y="0.926852" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tombolKeluarDiPause" sid="554936158068868">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293354822795706" speed="5">
+                    <frame duration="1" hotspotX="0.501241" hotspotY="0.503497" original-source="C:\Users\ASUS\Downloads\tombol.png">
+                        <collision-poly>
+                            <point x="0.0471464" y="0.132867" />
+                            <point x="0.498759" y="0.041958" />
+                            <point x="0.952854" y="0.132867" />
+                            <point x="0.997519" y="0.496504" />
+                            <point x="0.952854" y="0.867133" />
+                            <point x="0.498759" y="0.944056" />
+                            <point x="0.0471464" y="0.867133" />
+                            <point x="0.00248139" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Game1_LO.xml</layout>
+        <layout>homepage.xml</layout>
+        <layout>lvlpage.xml</layout>
+        <layout>storypage.xml</layout>
+        <layout>Layout Contoh.xml</layout>
+        <layout>bukusakti.xml</layout>
+        <layout>bsAceh_1.xml</layout>
+        <layout>infopage.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Game1_EV.xml</event-sheet>
+        <event-sheet>ES_homepage.xml</event-sheet>
+        <event-sheet>ES_lvlpage.xml</event-sheet>
+        <event-sheet>ES_storypage.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>ES_bukusakti.xml</event-sheet>
+        <event-sheet>ES_bsAceh1.xml</event-sheet>
+        <event-sheet>ES_infopage.xml</event-sheet>
+        <event-sheet>ES_GLobalLayout.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="14" />
+        <global-instance type="Touch" uid="17">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="79" />
+        <global-instance type="Audio" uid="80">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="backsound-gamelan.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
