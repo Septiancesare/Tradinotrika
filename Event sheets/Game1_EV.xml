@@ -168,7 +168,7 @@
                 <action behavior="LiteTween" id="3" name="Set target" sid="544525860893627" type="popUpPause">
                     <param id="0" name="Target is">0</param>
                     <param id="1" name="Relativity">0</param>
-                    <param id="2" name="Value">Self.X</param>
+                    <param id="2" name="Value">568</param>
                 </action>
                 <action behavior="LiteTween" id="3" name="Set target" sid="660398389221567" type="popUpPause">
                     <param id="0" name="Target is">1</param>
@@ -191,7 +191,7 @@
                 <action behavior="LiteTween" id="3" name="Set target" sid="673884851365939" type="popUpPause">
                     <param id="0" name="Target is">0</param>
                     <param id="1" name="Relativity">0</param>
-                    <param id="2" name="Value">Self.X</param>
+                    <param id="2" name="Value">568</param>
                 </action>
                 <action behavior="LiteTween" id="3" name="Set target" sid="235653532828801" type="popUpPause">
                     <param id="0" name="Target is">1</param>
