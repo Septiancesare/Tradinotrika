@@ -775,6 +775,11 @@
         </object-type>
         <object-type name="popUpPause" sid="327854601832708">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="833614626118426">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="940614768037626" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\ZZZ Yosef\00 Koleyah\Semester 3\Praktikum Multimedia 1\Pertemuan 8\Aset Pop Up\1.png">
@@ -794,6 +799,14 @@
         </object-type>
         <object-type name="tombolUlangiPause" sid="790794175523380">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="515206660947067">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="781825612346588">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="480299343923117" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\ZZZ Yosef\00 Koleyah\Semester 3\Praktikum Multimedia 1\Pertemuan 8\Aset\6.png">
@@ -813,6 +826,14 @@
         </object-type>
         <object-type name="tombolPlayDiPause" sid="818211331309230">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="174638533252632">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="674800473287762">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="173040030604514" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\ZZZ Yosef\00 Koleyah\Semester 3\Praktikum Multimedia 1\Pertemuan 8\Aset\7.png">
@@ -832,6 +853,14 @@
         </object-type>
         <object-type name="tombolKeluarDiPause" sid="554936158068868">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="288233253858512">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="587379255077568">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293354822795706" speed="5">
                     <frame duration="1" hotspotX="0.501241" hotspotY="0.503497" original-source="C:\Users\ASUS\Downloads\tombol.png">
