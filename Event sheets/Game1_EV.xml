@@ -128,84 +128,114 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="733950059469440">
+        <event-block sid="651845662502393">
             <conditions>
-                <condition id="-9" inverted="1" name="Layer is visible" sid="452049402795305" type="System">
-                    <param id="0" name="Layer">&quot;popUpPause&quot;</param>
-                </condition>
+                <condition id="-2" name="On start of layout" sid="509032654793321" type="System" />
             </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="490028384068867">
-                    <conditions>
-                        <condition id="17" name="On tap object" sid="705481836682806" type="Touch">
-                            <param id="0" name="Object">btnMenu</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="LiteTween" id="10" name="Start" sid="556826634945916" type="popUpPause">
-                            <param id="0" name="Start Mode">0</param>
-                            <param id="1" name="Force use current">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="215879149683770" type="System">
-                            <param id="0" name="Layer">&quot;popUpPause&quot;</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="930989909640478">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="373372386074681" type="System" />
-                    </conditions>
-                    <actions>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="845382410329688" type="tombolKeluarDiPause">
-                            <param id="0" name="Pin to">popUpPause</param>
-                            <param id="1" name="Mode">0</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="933995281048249" type="tombolPlayDiPause">
-                            <param id="0" name="Pin to">popUpPause</param>
-                            <param id="1" name="Mode">0</param>
-                        </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="635522927935483" type="tombolUlangiPause">
-                            <param id="0" name="Pin to">popUpPause</param>
-                            <param id="1" name="Mode">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="501065703192709" type="System">
-                            <param id="0" name="Layer">&quot;popUpPause&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="936735770363649" type="tombolPlayDiPause">
+                    <param id="0" name="Pin to">popUpPause</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="193882763868218" type="tombolUlangiPause">
+                    <param id="0" name="Pin to">popUpPause</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="725246530410685" type="tombolKeluarDiPause">
+                    <param id="0" name="Pin to">popUpPause</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="244312859024090" type="popUpPause">
+                    <param id="0" name="Y">-320</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="735826024546038" type="System">
+                    <param id="0" name="Layer">&quot;popUpPause&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
         </event-block>
-        <event-block sid="246561771800193">
+        <event-block sid="133171542243196">
             <conditions>
-                <condition id="-9" name="Layer is visible" sid="762501771860148" type="System">
-                    <param id="0" name="Layer">&quot;popUpPause&quot;</param>
+                <condition id="0" name="On function" sid="432115354007591" type="Function">
+                    <param id="0" name="Name">&quot;pop-in&quot;</param>
                 </condition>
             </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="309504656933325">
-                    <conditions>
-                        <condition id="17" name="On tap object" sid="863659328623397" type="Touch">
-                            <param id="0" name="Object">tombolPlayDiPause</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="LiteTween" id="11" name="Reverse" sid="680735567173175" type="popUpPause">
-                            <param id="0" name="Reverse mode">0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="561981470244837" type="System">
-                            <param id="0" name="Seconds">1.0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="556304550693157" type="System">
-                            <param id="0" name="Layer">&quot;popUpPause&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="924768135725476" type="popUpPause">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="544525860893627" type="popUpPause">
+                    <param id="0" name="Target is">0</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.X</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="660398389221567" type="popUpPause">
+                    <param id="0" name="Target is">1</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">320</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="169069388895597">
+            <conditions>
+                <condition id="0" name="On function" sid="509920081767847" type="Function">
+                    <param id="0" name="Name">&quot;pop-out&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="657691682904424" type="popUpPause">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="673884851365939" type="popUpPause">
+                    <param id="0" name="Target is">0</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">Self.X</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="235653532828801" type="popUpPause">
+                    <param id="0" name="Target is">1</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">-320</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="188708714226968">
+            <conditions>
+                <condition id="3" name="On touched object" sid="911882405853131" type="Touch">
+                    <param id="0" name="Object">btnMenu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="386220233448369" type="System">
+                    <param id="0" name="Layer">&quot;popUpPause&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Call function" sid="901915627907385" type="Function">
+                    <param id="0" name="Name">&quot;pop-in&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="492875706113195">
+            <conditions>
+                <condition id="3" name="On touched object" sid="841461049324445" type="Touch">
+                    <param id="0" name="Object">tombolPlayDiPause</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="836050253628742" type="Function">
+                    <param id="0" name="Name">&quot;pop-out&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="592159304340138" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="182911996244510" type="System">
+                    <param id="0" name="Layer">&quot;popUpPause&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

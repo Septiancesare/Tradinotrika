@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -779,6 +780,9 @@
                 <behavior-type name="LiteTween" sid="833614626118426">
                     <behavior id="lunarray_LiteTween" />
                 </behavior-type>
+                <behavior-type name="Pin" sid="858074269503146">
+                    <behavior id="Pin" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="940614768037626" speed="5">
@@ -878,6 +882,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Function" sid="880160857875893">
+            <plugin id="Function" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -923,6 +930,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Function" uid="85" />
     </global-instances>
     <sounds-folder>
         <file name="backsound-gamelan.ogg" />

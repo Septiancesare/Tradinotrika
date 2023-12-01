@@ -10,7 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Game1_LO</layout>
+        <layout active="1" order="1">Game1_LO</layout>
         <layout order="3">homepage</layout>
         <layout order="5">lvlpage</layout>
         <layout order="7">storypage</layout>
@@ -18,7 +18,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="10">bukusakti</layout>
         <layout order="11">bsAceh_1</layout>
         <layout order="14">infopage</layout>
-        <event-sheet active="1" order="2">Game1_EV</event-sheet>
+        <event-sheet order="2">Game1_EV</event-sheet>
         <event-sheet order="4">ES_homepage</event-sheet>
         <event-sheet order="6">ES_lvlpage</event-sheet>
         <event-sheet order="8">ES_storypage</event-sheet>
