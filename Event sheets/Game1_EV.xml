@@ -237,5 +237,103 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="162098129419978" title="Koin" />
+        <event-block sid="786610127879401">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="357507410816913" type="Idle">
+                    <param id="0" name="Object">koin</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="407627037159895" type="koin" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="824541919126842" title="Enemy collision" />
+        <event-block sid="535908195152919">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="316186516752772" type="Sprite5" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="411491721164759">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="407487486554940" type="Sprite5">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="345727167828549" type="Sprite5">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="715219040656607">
+                            <conditions>
+                                <condition behavior="Platform" id="10" name="Is by wall" sid="657177948638606" type="Sprite5">
+                                    <param id="0" name="Side">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="618129273215860" type="Sprite5">
+                                    <param id="0" name="Instance variable">move</param>
+                                    <param id="1" name="Value">&quot;left&quot;</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="993219291820104" type="Sprite5">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="417534229328808">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="709956731114577" type="Sprite5">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;left&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="328713426093933" type="Sprite5">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="110898255048533">
+                            <conditions>
+                                <condition behavior="Platform" id="10" name="Is by wall" sid="547556383642148" type="Sprite5">
+                                    <param id="0" name="Side">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="404628111848255" type="Sprite5">
+                                    <param id="0" name="Instance variable">move</param>
+                                    <param id="1" name="Value">&quot;right&quot;</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="189436663349645" type="Sprite5">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="824595004513816">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="185648776146884" type="Idle">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="338335744241042" type="Idle">
+                    <param id="0" name="&apos;On&apos; time">0.15</param>
+                    <param id="1" name="&apos;Off&apos; time">0.15</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
