@@ -111,6 +111,9 @@
         </object-type>
         <object-type name="Idle" sid="854399063176690">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="nyawa" sid="731363582245336" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="434240179174193">
                     <behavior id="Platform" />
@@ -982,6 +985,104 @@
                             <point x="0.386581" y="0.271552" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="205965057497738">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="476491190419573" speed="5">
+                    <frame duration="1" hotspotX="0.501241" hotspotY="0.503497" original-source="D:\aset game traditronika\13.png">
+                        <collision-poly>
+                            <point x="0.044665" y="0.125874" />
+                            <point x="0.498759" y="0.048951" />
+                            <point x="0.955335" y="0.125874" />
+                            <point x="1" y="0.496504" />
+                            <point x="0.952854" y="0.867133" />
+                            <point x="0.498759" y="0.951049" />
+                            <point x="0.0471464" y="0.867133" />
+                            <point x="0" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="290706220161954">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="939778362912403" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.49718" original-source="D:\aset game traditronika\Aset\NYAWA MASIH.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\aset game traditronika\Aset\NYAWA HILANG.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.00277264" />
+                            <point x="0.729205" y="0.270795" />
+                            <point x="0.972274" y="0.5" />
+                            <point x="0.830869" y="0.830869" />
+                            <point x="0.5" y="0.887246" />
+                            <point x="0.158041" y="0.841959" />
+                            <point x="0.038817" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="namaKarakter" sid="940943366825881">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite8" sid="104441222757128">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="240960210770602" speed="5">
+                    <frame duration="1" hotspotX="0.501235" hotspotY="0.503448" original-source="C:\Users\user\Downloads\tombol.png">
+                        <collision-poly>
+                            <point x="0.017284" y="0.0482759" />
+                            <point x="0.498765" y="0.0896552" />
+                            <point x="0.967901" y="0.0896552" />
+                            <point x="0.997531" y="0.496552" />
+                            <point x="0.97037" y="0.917241" />
+                            <point x="0.498765" y="0.917241" />
+                            <point x="0.017284" y="0.951724" />
+                            <point x="0.00246914" y="0.496552" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txKoin" sid="563931365828053">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite9" sid="396875337690677">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741338424695912" speed="0">
+                    <frame duration="1" hotspotX="0.501393" hotspotY="0.508197" original-source="D:\aset game traditronika\ASET TOMBOL\18.png">
+                        <collision-poly>
+                            <point x="0.0696379" y="0.0983607" />
+                            <point x="0.498607" y="0.0327869" />
+                            <point x="0.930362" y="0.0983607" />
+                            <point x="0.991643" y="0.491803" />
+                            <point x="0.933148" y="0.918033" />
+                            <point x="0.498607" y="0.868852" />
+                            <point x="0.0668524" y="0.918033" />
+                            <point x="0.00835655" y="0.491803" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501393" hotspotY="0.508197" original-source="D:\aset game traditronika\ASET TOMBOL\19.png">
+                        <collision-poly>
+                            <point x="0.0696379" y="0.0983607" />
+                            <point x="0.498607" y="0.0327869" />
+                            <point x="0.930362" y="0.0983607" />
+                            <point x="0.991643" y="0.491803" />
+                            <point x="0.933148" y="0.918033" />
+                            <point x="0.498607" y="0.868852" />
+                            <point x="0.0668524" y="0.918033" />
+                            <point x="0.00835655" y="0.491803" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501393" hotspotY="0.508197" original-source="D:\aset game traditronika\ASET TOMBOL\20.png" />
+                    <frame duration="1" hotspotX="0.501393" hotspotY="0.508197" original-source="D:\aset game traditronika\ASET TOMBOL\21.png" />
+                    <frame duration="1" hotspotX="0.501393" hotspotY="0.508197" original-source="D:\aset game traditronika\ASET TOMBOL\22.png" />
+                    <frame duration="1" hotspotX="0.501393" hotspotY="0.508197" original-source="D:\aset game traditronika\ASET TOMBOL\23.png" />
                 </animation>
             </animation-folder>
         </object-type>
