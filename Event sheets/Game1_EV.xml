@@ -162,19 +162,14 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="LiteTween" id="10" name="Start" sid="924768135725476" type="popUpPause">
-                    <param id="0" name="Start Mode">0</param>
-                    <param id="1" name="Force use current">0</param>
+                <action id="-2" name="Set Y" sid="772868612538119" type="popUpPause">
+                    <param id="0" name="Y">320</param>
                 </action>
-                <action behavior="LiteTween" id="3" name="Set target" sid="544525860893627" type="popUpPause">
-                    <param id="0" name="Target is">0</param>
-                    <param id="1" name="Relativity">0</param>
-                    <param id="2" name="Value">568</param>
+                <action id="-1" name="Set X" sid="208092741346566" type="popUpPause">
+                    <param id="0" name="X">568</param>
                 </action>
-                <action behavior="LiteTween" id="3" name="Set target" sid="660398389221567" type="popUpPause">
-                    <param id="0" name="Target is">1</param>
-                    <param id="1" name="Relativity">0</param>
-                    <param id="2" name="Value">320</param>
+                <action id="-13" name="Set time scale" sid="305970209242379" type="System">
+                    <param id="0" name="Time scale">0</param>
                 </action>
             </actions>
         </event-block>
@@ -185,19 +180,14 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="LiteTween" id="10" name="Start" sid="657691682904424" type="popUpPause">
-                    <param id="0" name="Start Mode">0</param>
-                    <param id="1" name="Force use current">0</param>
+                <action id="-2" name="Set Y" sid="303701874984138" type="popUpPause">
+                    <param id="0" name="Y">-320</param>
                 </action>
-                <action behavior="LiteTween" id="3" name="Set target" sid="673884851365939" type="popUpPause">
-                    <param id="0" name="Target is">0</param>
-                    <param id="1" name="Relativity">0</param>
-                    <param id="2" name="Value">568</param>
+                <action id="-1" name="Set X" sid="862384787311791" type="popUpPause">
+                    <param id="0" name="X">568</param>
                 </action>
-                <action behavior="LiteTween" id="3" name="Set target" sid="235653532828801" type="popUpPause">
-                    <param id="0" name="Target is">1</param>
-                    <param id="1" name="Relativity">0</param>
-                    <param id="2" name="Value">-320</param>
+                <action id="-13" name="Set time scale" sid="277583250455826" type="System">
+                    <param id="0" name="Time scale">1.0</param>
                 </action>
             </actions>
         </event-block>
