@@ -577,7 +577,7 @@
                     <param id="0" name="Seconds">0.5</param>
                 </action>
                 <action id="0" name="Call function" sid="836459552457634" type="Function">
-                    <param id="0" name="Name">&quot;pop-up-out-salah&quot;</param>
+                    <param id="0" name="Name">&quot;pop-up-out-benar&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
                 <action id="0" name="Call function" sid="684472890297662" type="Function">
