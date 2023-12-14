@@ -4,11 +4,19 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
+<<<<<<< Updated upstream
         <position-x>457.408</position-x>
         <position-y>486.368</position-y>
         <position-z>170.661</position-z>
         <lookat-x>457.408</lookat-x>
         <lookat-y>486.368</lookat-y>
+=======
+        <position-x>418.673</position-x>
+        <position-y>250.342</position-y>
+        <position-z>139.317</position-z>
+        <lookat-x>418.673</lookat-x>
+        <lookat-y>250.342</lookat-y>
+>>>>>>> Stashed changes
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -23,18 +31,22 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="elemen" />
+    <active-layer name="gameOver" />
     <layers>
         <layer locked="1" name="Background" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="Ground" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Ground" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Game" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Tombol" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="enemy" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="PetiQuiz" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="elemen" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="QUiz1" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Quiz2" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Quiz3" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Quiz4" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Quiz5" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="PopUpBenarSalah" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="popUpPause" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Quiz2" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="gameOver" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

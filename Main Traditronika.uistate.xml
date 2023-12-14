@@ -102,5 +102,33 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/1D/" />
         <folder expanded="1" path="animation-folder/petiQuiz/" />
         <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/Soal2/" />
+        <folder expanded="1" path="animation-folder/Sprite10/" />
+        <folder expanded="1" path="animation-folder/2A/" />
+        <folder expanded="1" path="animation-folder/2B/" />
+        <folder expanded="1" path="animation-folder/2C/" />
+        <folder expanded="1" path="animation-folder/2D/" />
+        <folder expanded="1" path="animation-folder/petiQuiz2/" />
+        <folder expanded="1" path="animation-folder/petiQuiz3/" />
+        <folder expanded="1" path="animation-folder/Soal3/" />
+        <folder expanded="1" path="animation-folder/3A/" />
+        <folder expanded="1" path="animation-folder/3B/" />
+        <folder expanded="1" path="animation-folder/3C/" />
+        <folder expanded="1" path="animation-folder/3D/" />
+        <folder expanded="1" path="animation-folder/petiQuiz4/" />
+        <folder expanded="1" path="animation-folder/Soal4/" />
+        <folder expanded="1" path="animation-folder/4A/" />
+        <folder expanded="1" path="animation-folder/4B/" />
+        <folder expanded="1" path="animation-folder/4C/" />
+        <folder expanded="1" path="animation-folder/4D/" />
+        <folder expanded="1" path="animation-folder/petiQuiz5/" />
+        <folder expanded="1" path="animation-folder/Soal5/" />
+        <folder expanded="1" path="animation-folder/5A/" />
+        <folder expanded="1" path="animation-folder/5B/" />
+        <folder expanded="1" path="animation-folder/5C/" />
+        <folder expanded="1" path="animation-folder/5D/" />
+        <folder expanded="1" path="animation-folder/Sprite11/" />
+        <folder expanded="1" path="animation-folder/restart/" />
+        <folder expanded="1" path="animation-folder/tombolKeluarGameOver/" />
     </folders-expanded>
 </c2uistate>

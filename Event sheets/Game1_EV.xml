@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game1_EV</name>
     <events>
+        <variable constant="0" name="soaljawab" sid="910938557074467" static="0" type="number">0</variable>
+        <variable constant="0" name="jumlahSoal" sid="312855176026109" static="0" type="number">5</variable>
         <include>koinGlobal</include>
         <include>Sound</include>
         <variable constant="0" name="koin" sid="292818719972316" static="0" type="number">0</variable>
@@ -170,6 +172,10 @@
                         </action>
                         <action id="-4" name="Set layer visible" sid="735826024546038" type="System">
                             <param id="0" name="Layer">&quot;popUpPause&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="214611065331147" type="System">
+                            <param id="0" name="Layer">&quot;gameOver&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
                     </actions>
@@ -598,6 +604,10 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+                <action id="-10" name="Add to" sid="458028777360213" type="System">
+                    <param id="0" name="Variable">soaljawab</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="289950319914466">
@@ -631,6 +641,21 @@
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="681263571284726" type="System">
+                    <param id="0" name="Variable">jumlahSoal</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="296902518395547" type="System">
+                    <param id="0" name="Variable">soaljawab</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Add to" sid="998372210143524" type="Idle">
+                    <param id="0" name="Instance variable">nyawa</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="316046833271811" type="nyawa">
+                    <param id="0" name="Frame number">Idle.nyawa</param>
                 </action>
             </actions>
         </event-block>
@@ -666,6 +691,21 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+                <action id="-11" name="Subtract from" sid="511929213822224" type="System">
+                    <param id="0" name="Variable">jumlahSoal</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="561780365913496" type="System">
+                    <param id="0" name="Variable">soaljawab</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Add to" sid="782243204499865" type="Idle">
+                    <param id="0" name="Instance variable">nyawa</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="381843607490090" type="nyawa">
+                    <param id="0" name="Frame number">Idle.nyawa</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="593825587768412">
@@ -700,6 +740,21 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+                <action id="-11" name="Subtract from" sid="467185958526585" type="System">
+                    <param id="0" name="Variable">jumlahSoal</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="826685333955660" type="System">
+                    <param id="0" name="Variable">soaljawab</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Add to" sid="609697265858305" type="Idle">
+                    <param id="0" name="Instance variable">nyawa</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="892148201092931" type="nyawa">
+                    <param id="0" name="Frame number">Idle.nyawa</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="684605933556165">
@@ -719,5 +774,1437 @@
             </actions>
         </event-block>
         <event-group description="" sid="384418396496271" title="Soal Quiz 2" />
+        <event-block sid="997545151490061">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="570347869177317" type="Idle">
+                    <param id="0" name="Object">petiQuiz2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="486981940741196" type="petiQuiz2">
+                    <param id="0" name="Animation">&quot;Open&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="527390306639444" type="System">
+                    <param id="0" name="Layer">&quot;Quiz2&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Call function" sid="292562537255363" type="Function">
+                    <param id="0" name="Name">&quot;pop-in-quiz-2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="634680118923165">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="320996427056891" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="930509228244137" type="2A">
+                    <param id="0" name="Pin to">Soal2</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="324451865540562" type="2B">
+                    <param id="0" name="Pin to">Soal2</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="886718677583082" type="2C">
+                    <param id="0" name="Pin to">Soal2</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="659724480721763" type="2D">
+                    <param id="0" name="Pin to">Soal2</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="179026689933527" type="Soal2">
+                    <param id="0" name="Y">-300</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="529754309185608" type="System">
+                    <param id="0" name="Layer">&quot;Quiz2&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="616812645872573">
+            <conditions>
+                <condition id="0" name="On function" sid="684371880513555" type="Function">
+                    <param id="0" name="Name">&quot;pop-in-quiz-2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="595031027168422" type="Soal2">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="802931234114226" type="Soal2">
+                    <param id="0" name="Y">300</param>
+                </action>
+                <action id="-1" name="Set X" sid="461248482437072" type="Soal2">
+                    <param id="0" name="X">2254</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="721160283255209">
+            <conditions>
+                <condition id="0" name="On function" sid="344841980775684" type="Function">
+                    <param id="0" name="Name">&quot;pop-out-quiz-2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="880975893473339" type="Soal2">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="477888701003744" type="Soal2">
+                    <param id="0" name="Y">-1000</param>
+                </action>
+                <action id="-15" name="Set visible" sid="444584918625240" type="Soal2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="898590921711466">
+            <conditions>
+                <condition id="3" name="On touched object" sid="274965817093869" type="Touch">
+                    <param id="0" name="Object">2C</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="644272210632431" type="Function">
+                    <param id="0" name="Name">&quot;pop-up-in-benar2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="380438051268515" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Call function" sid="860171998647058" type="Function">
+                    <param id="0" name="Name">&quot;pop-up-out-benar2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="684048966635384" type="Function">
+                    <param id="0" name="Name">&quot;pop-out-quiz-2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="146435034251170" type="System">
+                    <param id="0" name="Layer">&quot;Quiz2&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="569864710264629" type="System">
+                    <param id="0" name="Variable">koin</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="0" name="Play" sid="472068929218357" type="Audio">
+                    <param id="0" name="Audio file">correct-6033</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="516469709376280" type="System">
+                    <param id="0" name="Variable">soaljawab</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="596310909095863">
+            <conditions>
+                <condition id="3" name="On touched object" sid="336366255289551" type="Touch">
+                    <param id="0" name="Object">2A</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="673750193151382" type="Function">
+                    <param id="0" name="Name">&quot;pop-up-in-salah2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="874132384180197" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Call function" sid="826742272500920" type="Function">
+                    <param id="0" name="Name">&quot;pop-up-out-salah2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="186199876101599" type="Function">
+                    <param id="0" name="Name">&quot;pop-out-quiz-2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="781904499432145" type="System">
+                    <param id="0" name="Layer">&quot;Quiz2&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Play" sid="305021247099687" type="Audio">
+                    <param id="0" name="Audio file">fail-144746</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="714484306594540" type="System">
+                    <param id="0" name="Variable">jumlahSoal</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="428050994837102" type="System">
+                    <param id="0" name="Variable">soaljawab</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Add to" sid="846598221272836" type="Idle">
+                    <param id="0" name="Instance variable">nyawa</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="374726491681003" type="nyawa">
+                    <param id="0" name="Frame number">Idle.nyawa</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="223687179585555">
+            <conditions>
+                <condition id="3" name="On touched object" sid="312495527872710" type="Touch">
+                    <param id="0" name="Object">2B</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="221611053374486" type="Function">
+                    <param id="0" name="Name">&quot;pop-up-in-salah2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="109467000981066" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Call function" sid="759932884471049" type="Function">
+                    <param id="0" name="Name">&quot;pop-up-out-salah2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="330154098269004" type="Function">
+                    <param id="0" name="Name">&quot;pop-out-quiz-2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="312263585235612" type="System">
+                    <param id="0" name="Layer">&quot;Quiz2&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Play" sid="109168666872542" type="Audio">
+                    <param id="0" name="Audio file">fail-144746</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="877579105591655" type="System">
+                    <param id="0" name="Variable">jumlahSoal</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="450133789800893" type="System">
+                    <param id="0" name="Variable">soaljawab</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Add to" sid="183695373499903" type="Idle">
+                    <param id="0" name="Instance variable">nyawa</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="873540076449128" type="nyawa">
+                    <param id="0" name="Frame number">Idle.nyawa</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="226926228309164">
+            <conditions>
+                <condition id="3" name="On touched object" sid="279574110030116" type="Touch">
+                    <param id="0" name="Object">2D</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="385581473010280" type="Function">
+                    <param id="0" name="Name">&quot;pop-up-in-salah2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="247032873337820" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Call function" sid="601481426544213" type="Function">
+                    <param id="0" name="Name">&quot;pop-up-out-salah2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="304550208111897" type="Function">
+                    <param id="0" name="Name">&quot;pop-out-quiz-2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="275603659946962" type="System">
+                    <param id="0" name="Layer">&quot;Quiz2&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Play" sid="650302891884485" type="Audio">
+                    <param id="0" name="Audio file">fail-144746</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="253040481832607" type="System">
+                    <param id="0" name="Variable">jumlahSoal</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="608632531230614" type="System">
+                    <param id="0" name="Variable">soaljawab</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Add to" sid="688392533185318" type="Idle">
+                    <param id="0" name="Instance variable">nyawa</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="800445348956984" type="nyawa">
+                    <param id="0" name="Frame number">Idle.nyawa</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="639706548961852" title="pop-up-benarSalah2">
+            <sub-events>
+                <event-block sid="945328025739835">
+                    <conditions>
+                        <condition id="0" name="On function" sid="896854919516356" type="Function">
+                            <param id="0" name="Name">&quot;pop-up-in-benar2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="213268514944674" type="Benar">
+                            <param id="0" name="Y">320</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="856323882314092" type="Benar">
+                            <param id="0" name="X">2254</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="765247252079949" type="Benar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="556501089840121">
+                    <conditions>
+                        <condition id="0" name="On function" sid="151585133511687" type="Function">
+                            <param id="0" name="Name">&quot;pop-up-in-salah2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="890531136494814" type="Salah">
+                            <param id="0" name="Y">320</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="942134796487866" type="Salah">
+                            <param id="0" name="X">2254</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="242995445038937" type="Salah">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="982273730638336">
+                    <conditions>
+                        <condition id="0" name="On function" sid="420555667960811" type="Function">
+                            <param id="0" name="Name">&quot;pop-up-out-salah2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="761142593555791" type="Salah">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="275262846328744">
+                    <conditions>
+                        <condition id="0" name="On function" sid="804423439053725" type="Function">
+                            <param id="0" name="Name">&quot;pop-up-out-benar2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="238047931062970" type="Benar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="302674537518945" title="Soal Quiz 3">
+                    <sub-events>
+                        <event-block sid="186085347652438">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="599774070123839" type="Touch">
+                                    <param id="0" name="Object">3D</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="581927831109148" type="Function">
+                                    <param id="0" name="Name">&quot;pop-up-in-benar3&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="458658605724759" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="0" name="Call function" sid="819332451791404" type="Function">
+                                    <param id="0" name="Name">&quot;pop-up-out-benar3&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="0" name="Call function" sid="283996912509937" type="Function">
+                                    <param id="0" name="Name">&quot;pop-out-quiz-3&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="578820196051557" type="System">
+                                    <param id="0" name="Layer">&quot;Quiz3&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="150460046026686" type="System">
+                                    <param id="0" name="Variable">koin</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="0" name="Play" sid="817105765106991" type="Audio">
+                                    <param id="0" name="Audio file">correct-6033</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="810162148865864" type="System">
+                                    <param id="0" name="Variable">soaljawab</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="742845029164654">
+                            <conditions>
+                                <condition id="0" name="On function" sid="126617065502566" type="Function">
+                                    <param id="0" name="Name">&quot;pop-in-quiz-3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="LiteTween" id="10" name="Start" sid="991780793150126" type="Soal3">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="694429167826280" type="Soal3">
+                                    <param id="0" name="Y">300</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="177372908792338" type="Soal3">
+                                    <param id="0" name="X">4486</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="159755967034697">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="749797905260635" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="594011811286951" type="3A">
+                                    <param id="0" name="Pin to">Soal3</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="549607873845807" type="3B">
+                                    <param id="0" name="Pin to">Soal3</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="429932001900725" type="3C">
+                                    <param id="0" name="Pin to">Soal3</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="273953273769539" type="3D">
+                                    <param id="0" name="Pin to">Soal3</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="646378646674103" type="Soal3">
+                                    <param id="0" name="Y">-300</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="788847496813804" type="System">
+                                    <param id="0" name="Layer">&quot;Quiz3&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="287808576042054">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="557481741470550" type="Idle">
+                                    <param id="0" name="Object">petiQuiz3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="382600986476437" type="petiQuiz3">
+                                    <param id="0" name="Animation">&quot;Open&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="315526658863987" type="System">
+                                    <param id="0" name="Layer">&quot;Quiz3&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="148188552813947" type="Function">
+                                    <param id="0" name="Name">&quot;pop-in-quiz-3&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="305732146262209">
+                    <conditions>
+                        <condition id="0" name="On function" sid="609778487353114" type="Function">
+                            <param id="0" name="Name">&quot;pop-out-quiz-3&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="441523606183887" type="Soal3">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="833664332902595" type="Soal3">
+                            <param id="0" name="Y">-1000</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="334910671270184" type="Soal3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="121015423596380">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="895024125273317" type="Touch">
+                            <param id="0" name="Object">3A</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="850893629545438" type="Function">
+                            <param id="0" name="Name">&quot;pop-up-in-salah3&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="881359504530149" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Call function" sid="833415073748092" type="Function">
+                            <param id="0" name="Name">&quot;pop-up-out-salah3&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="305680057547164" type="Function">
+                            <param id="0" name="Name">&quot;pop-out-quiz-3&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="998811245924768" type="System">
+                            <param id="0" name="Layer">&quot;Quiz3&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="441679531749934" type="Audio">
+                            <param id="0" name="Audio file">fail-144746</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="946317462575641" type="System">
+                            <param id="0" name="Variable">jumlahSoal</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="487230005340479" type="System">
+                            <param id="0" name="Variable">soaljawab</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="840274281771603" type="Idle">
+                            <param id="0" name="Instance variable">nyawa</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="272145547130796" type="nyawa">
+                            <param id="0" name="Frame number">Idle.nyawa</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="398809948886087">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="872420774528152" type="Touch">
+                            <param id="0" name="Object">3B</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="336485593218535" type="Function">
+                            <param id="0" name="Name">&quot;pop-up-in-salah3&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="862662326912290" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Call function" sid="807519748895141" type="Function">
+                            <param id="0" name="Name">&quot;pop-up-out-salah3&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="492886547676179" type="Function">
+                            <param id="0" name="Name">&quot;pop-out-quiz-3&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="562855109775586" type="System">
+                            <param id="0" name="Layer">&quot;Quiz3&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="985373573989664" type="Audio">
+                            <param id="0" name="Audio file">fail-144746</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="178752627143748" type="System">
+                            <param id="0" name="Variable">jumlahSoal</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="940582057303013" type="System">
+                            <param id="0" name="Variable">soaljawab</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="566228255765427" type="Idle">
+                            <param id="0" name="Instance variable">nyawa</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="791303438961530" type="nyawa">
+                            <param id="0" name="Frame number">Idle.nyawa</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="457869423816600">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="309392444415808" type="Touch">
+                            <param id="0" name="Object">3C</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="967250728798464" type="Function">
+                            <param id="0" name="Name">&quot;pop-up-in-salah3&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="991007379284755" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Call function" sid="826511001980443" type="Function">
+                            <param id="0" name="Name">&quot;pop-up-out-salah3&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="171337395652197" type="Function">
+                            <param id="0" name="Name">&quot;pop-out-quiz-3&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="127810350892731" type="System">
+                            <param id="0" name="Layer">&quot;Quiz3&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="319954438495401" type="Audio">
+                            <param id="0" name="Audio file">fail-144746</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="569254856547684" type="System">
+                            <param id="0" name="Variable">jumlahSoal</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="996887754263946" type="System">
+                            <param id="0" name="Variable">soaljawab</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="198834329920251" type="Idle">
+                            <param id="0" name="Instance variable">nyawa</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="317166079191678" type="nyawa">
+                            <param id="0" name="Frame number">Idle.nyawa</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="355298490862701" title="pop-up-benarSalah3">
+                    <sub-events>
+                        <event-block sid="483303249145399">
+                            <conditions>
+                                <condition id="0" name="On function" sid="625914920976325" type="Function">
+                                    <param id="0" name="Name">&quot;pop-up-in-benar3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="675740296525724" type="Benar">
+                                    <param id="0" name="Y">320</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="209120095928319" type="Benar">
+                                    <param id="0" name="X">4486</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="365174778290764" type="Benar">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="997992905245739">
+                            <conditions>
+                                <condition id="0" name="On function" sid="887629262806120" type="Function">
+                                    <param id="0" name="Name">&quot;pop-up-in-salah3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="664253353831913" type="Salah">
+                                    <param id="0" name="Y">320</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="686100828083919" type="Salah">
+                                    <param id="0" name="X">4486</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="616513941914066" type="Salah">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="164568647010713">
+                            <conditions>
+                                <condition id="0" name="On function" sid="626008029930526" type="Function">
+                                    <param id="0" name="Name">&quot;pop-up-out-salah3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="164364571237908" type="Salah">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="847508311277163">
+                            <conditions>
+                                <condition id="0" name="On function" sid="255622394846208" type="Function">
+                                    <param id="0" name="Name">&quot;pop-up-out-benar3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="498585752590386" type="Benar">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-group description="" sid="700938594170303" title="Soal Quiz 4">
+                            <sub-events>
+                                <event-block sid="515705385151998">
+                                    <conditions>
+                                        <condition id="0" name="On function" sid="788801285530307" type="Function">
+                                            <param id="0" name="Name">&quot;pop-in-quiz-4&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="287199730570898" type="Soal4">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="229774081694812" type="Soal4">
+                                            <param id="0" name="Y">300</param>
+                                        </action>
+                                        <action id="-1" name="Set X" sid="879433904664630" type="Soal4">
+                                            <param id="0" name="X">6984</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="845152015417148">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="671928523425160" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="428177028062315" type="4A">
+                                            <param id="0" name="Pin to">Soal4</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="736479982805174" type="4B">
+                                            <param id="0" name="Pin to">Soal4</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="837107118692756" type="4C">
+                                            <param id="0" name="Pin to">Soal4</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="333202218419510" type="4D">
+                                            <param id="0" name="Pin to">Soal4</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="446229375398098" type="Soal4">
+                                            <param id="0" name="Y">-300</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="813027826919991" type="System">
+                                            <param id="0" name="Layer">&quot;Quiz4&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="555444888835294">
+                                    <conditions>
+                                        <condition id="1" name="Is overlapping another object" sid="617934875627939" type="Idle">
+                                            <param id="0" name="Object">petiQuiz4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="236122294736581" type="petiQuiz4">
+                                            <param id="0" name="Animation">&quot;Open&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="726928652309653" type="System">
+                                            <param id="0" name="Layer">&quot;Quiz4&quot;</param>
+                                            <param id="1" name="Visibility">1</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="554856168436742" type="Function">
+                                            <param id="0" name="Name">&quot;pop-in-quiz-4&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-block sid="454911816618464">
+                            <conditions>
+                                <condition id="0" name="On function" sid="412066581013987" type="Function">
+                                    <param id="0" name="Name">&quot;pop-out-quiz-4&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="LiteTween" id="10" name="Start" sid="561302514143507" type="Soal4">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="567870868907819" type="Soal4">
+                                    <param id="0" name="Y">-1000</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="877392901531980" type="Soal4">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="852893124270304">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="616543262846004" type="Touch">
+                                    <param id="0" name="Object">4D</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="676067827157252" type="Function">
+                                    <param id="0" name="Name">&quot;pop-up-in-benar4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="466819335031716" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="0" name="Call function" sid="412906223890705" type="Function">
+                                    <param id="0" name="Name">&quot;pop-up-out-benar4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="0" name="Call function" sid="828779933473327" type="Function">
+                                    <param id="0" name="Name">&quot;pop-out-quiz-4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="451490305740447" type="System">
+                                    <param id="0" name="Layer">&quot;Quiz4&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="193257395101481" type="System">
+                                    <param id="0" name="Variable">koin</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="0" name="Play" sid="931029568848275" type="Audio">
+                                    <param id="0" name="Audio file">correct-6033</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="300065579393059" type="System">
+                                    <param id="0" name="Variable">soaljawab</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="546497438278297">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="521666038533790" type="Touch">
+                                    <param id="0" name="Object">4A</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="834747259050015" type="Function">
+                                    <param id="0" name="Name">&quot;pop-up-in-salah4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="898234328334178" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="0" name="Call function" sid="152787531218581" type="Function">
+                                    <param id="0" name="Name">&quot;pop-up-out-salah4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="0" name="Call function" sid="556126537702429" type="Function">
+                                    <param id="0" name="Name">&quot;pop-out-quiz-4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="832188927519839" type="System">
+                                    <param id="0" name="Layer">&quot;Quiz4&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="794730071772731" type="Audio">
+                                    <param id="0" name="Audio file">fail-144746</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="119992185565116" type="System">
+                                    <param id="0" name="Variable">jumlahSoal</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="644636757074059" type="System">
+                                    <param id="0" name="Variable">soaljawab</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="346441029444699" type="Idle">
+                                    <param id="0" name="Instance variable">nyawa</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="369298359494114" type="nyawa">
+                                    <param id="0" name="Frame number">Idle.nyawa</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="941711140228781">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="336635750441046" type="Touch">
+                                    <param id="0" name="Object">4B</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="317791395672109" type="Function">
+                                    <param id="0" name="Name">&quot;pop-up-in-salah4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="328493631745557" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="0" name="Call function" sid="270304189452275" type="Function">
+                                    <param id="0" name="Name">&quot;pop-up-out-salah4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="0" name="Call function" sid="880697706147059" type="Function">
+                                    <param id="0" name="Name">&quot;pop-out-quiz-4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="130339117368038" type="System">
+                                    <param id="0" name="Layer">&quot;Quiz4&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="272350267062068" type="Audio">
+                                    <param id="0" name="Audio file">fail-144746</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="810958743301265" type="System">
+                                    <param id="0" name="Variable">jumlahSoal</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="724449392827587" type="System">
+                                    <param id="0" name="Variable">soaljawab</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="616148350451238" type="Idle">
+                                    <param id="0" name="Instance variable">nyawa</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="522873954342917" type="nyawa">
+                                    <param id="0" name="Frame number">Idle.nyawa</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="983204086485730">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="303294746737413" type="Touch">
+                                    <param id="0" name="Object">4C</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="565072964412838" type="Function">
+                                    <param id="0" name="Name">&quot;pop-up-in-salah4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="640208186576003" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="0" name="Call function" sid="186339481387668" type="Function">
+                                    <param id="0" name="Name">&quot;pop-up-out-salah4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="0" name="Call function" sid="388215592582258" type="Function">
+                                    <param id="0" name="Name">&quot;pop-out-quiz-4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="786989117327375" type="System">
+                                    <param id="0" name="Layer">&quot;Quiz4&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="873069313424819" type="Audio">
+                                    <param id="0" name="Audio file">fail-144746</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="259405619282358" type="System">
+                                    <param id="0" name="Variable">jumlahSoal</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="276668798900557" type="System">
+                                    <param id="0" name="Variable">soaljawab</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="786958263873442" type="Idle">
+                                    <param id="0" name="Instance variable">nyawa</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="326721984060698" type="nyawa">
+                                    <param id="0" name="Frame number">Idle.nyawa</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-group description="" sid="666091752028040" title="pop-up-benarSalah4">
+                            <sub-events>
+                                <event-block sid="388380268729738">
+                                    <conditions>
+                                        <condition id="0" name="On function" sid="916638279490245" type="Function">
+                                            <param id="0" name="Name">&quot;pop-up-in-benar4&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="850014134664282" type="Benar">
+                                            <param id="0" name="Y">320</param>
+                                        </action>
+                                        <action id="-1" name="Set X" sid="392803397833998" type="Benar">
+                                            <param id="0" name="X">6984</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="676121663966137" type="Benar">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="959369171832517">
+                                    <conditions>
+                                        <condition id="0" name="On function" sid="676578374973942" type="Function">
+                                            <param id="0" name="Name">&quot;pop-up-in-salah4&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="210228930028349" type="Salah">
+                                            <param id="0" name="Y">320</param>
+                                        </action>
+                                        <action id="-1" name="Set X" sid="306077449987735" type="Salah">
+                                            <param id="0" name="X">6984</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="866450087870516" type="Salah">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="387924577887100">
+                                    <conditions>
+                                        <condition id="0" name="On function" sid="467063670054268" type="Function">
+                                            <param id="0" name="Name">&quot;pop-up-out-salah4&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="275390302344872" type="Salah">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="488171953786911">
+                                    <conditions>
+                                        <condition id="0" name="On function" sid="907707047310409" type="Function">
+                                            <param id="0" name="Name">&quot;pop-up-out-benar4&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="836964487058879" type="Benar">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-group description="" sid="629578031791129" title="pop-up-benarSalah5">
+                                    <sub-events>
+                                        <event-block sid="364359832846295">
+                                            <conditions>
+                                                <condition id="0" name="On function" sid="991603056779976" type="Function">
+                                                    <param id="0" name="Name">&quot;pop-up-in-benar5&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Set Y" sid="318677400001279" type="Benar">
+                                                    <param id="0" name="Y">320</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="820530103569106" type="Benar">
+                                                    <param id="0" name="X">9420</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="860960673205969" type="Benar">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="459060559957968">
+                                            <conditions>
+                                                <condition id="0" name="On function" sid="317843601254769" type="Function">
+                                                    <param id="0" name="Name">&quot;pop-up-in-salah5&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-2" name="Set Y" sid="312334658474659" type="Salah">
+                                                    <param id="0" name="Y">320</param>
+                                                </action>
+                                                <action id="-1" name="Set X" sid="792100513217087" type="Salah">
+                                                    <param id="0" name="X">9420</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="390758582100731" type="Salah">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="290182710114934">
+                                            <conditions>
+                                                <condition id="0" name="On function" sid="629718305582915" type="Function">
+                                                    <param id="0" name="Name">&quot;pop-up-out-salah5&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="834335678268725" type="Salah">
+                                                    <param id="0" name="Visibility">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="684912367146092">
+                                            <conditions>
+                                                <condition id="0" name="On function" sid="362641452905666" type="Function">
+                                                    <param id="0" name="Name">&quot;pop-up-out-benar5&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="790781650268281" type="Benar">
+                                                    <param id="0" name="Visibility">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                                <event-group description="" sid="184715415663549" title="Soal Quiz 5" />
+                                <event-block sid="708852893402947">
+                                    <conditions>
+                                        <condition id="1" name="Is overlapping another object" sid="454881432789174" type="Idle">
+                                            <param id="0" name="Object">petiQuiz5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="793113326895932" type="petiQuiz5">
+                                            <param id="0" name="Animation">&quot;Open&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="129611401944306" type="System">
+                                            <param id="0" name="Layer">&quot;Quiz5&quot;</param>
+                                            <param id="1" name="Visibility">1</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="601103661163450" type="Function">
+                                            <param id="0" name="Name">&quot;pop-in-quiz-5&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="689498286559076">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="565584845176384" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="855683145983536" type="5A">
+                                            <param id="0" name="Pin to">Soal5</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="723258531318649" type="5B">
+                                            <param id="0" name="Pin to">Soal5</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="198361142973155" type="5C">
+                                            <param id="0" name="Pin to">Soal5</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="739325351966931" type="5D">
+                                            <param id="0" name="Pin to">Soal5</param>
+                                            <param id="1" name="Mode">0</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="200657310340483" type="Soal5">
+                                            <param id="0" name="Y">-300</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="505997959842271" type="System">
+                                            <param id="0" name="Layer">&quot;Quiz5&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="149275102265190">
+                                    <conditions>
+                                        <condition id="0" name="On function" sid="986646241001670" type="Function">
+                                            <param id="0" name="Name">&quot;pop-in-quiz-5&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="307647838369097" type="Soal5">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="755153151112200" type="Soal5">
+                                            <param id="0" name="Y">300</param>
+                                        </action>
+                                        <action id="-1" name="Set X" sid="507441285141491" type="Soal5">
+                                            <param id="0" name="X">9420</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="577358704346358">
+                                    <conditions>
+                                        <condition id="0" name="On function" sid="149886302862615" type="Function">
+                                            <param id="0" name="Name">&quot;pop-out-quiz-5&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="831850852846114" type="Soal5">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="389637596911009" type="Soal5">
+                                            <param id="0" name="Y">-1000</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="808742702486146" type="Soal5">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="819824507378145">
+                                    <conditions>
+                                        <condition id="3" name="On touched object" sid="921546852770155" type="Touch">
+                                            <param id="0" name="Object">5C</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="134778140555622" type="Function">
+                                            <param id="0" name="Name">&quot;pop-up-in-benar5&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="422343685253871" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="779411968180191" type="Function">
+                                            <param id="0" name="Name">&quot;pop-up-out-benar5&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="109920854923290" type="Function">
+                                            <param id="0" name="Name">&quot;pop-out-quiz-5&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="557720057491057" type="System">
+                                            <param id="0" name="Layer">&quot;Quiz5&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="290768742422792" type="System">
+                                            <param id="0" name="Variable">koin</param>
+                                            <param id="1" name="Value">10</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="779727645968607" type="Audio">
+                                            <param id="0" name="Audio file">correct-6033</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="950268541782877" type="System">
+                                            <param id="0" name="Variable">soaljawab</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="707746011146498">
+                                    <conditions>
+                                        <condition id="3" name="On touched object" sid="816737620887524" type="Touch">
+                                            <param id="0" name="Object">5A</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="508770407710205" type="Function">
+                                            <param id="0" name="Name">&quot;pop-up-in-salah5&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="714850244956310" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="814328569104550" type="Function">
+                                            <param id="0" name="Name">&quot;pop-up-out-salah5&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="640987545599243" type="Function">
+                                            <param id="0" name="Name">&quot;pop-out-quiz-5&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="974437322552094" type="System">
+                                            <param id="0" name="Layer">&quot;Quiz5&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="378668058303016" type="Audio">
+                                            <param id="0" name="Audio file">fail-144746</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="404900781379434" type="System">
+                                            <param id="0" name="Variable">jumlahSoal</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="119088273707343" type="System">
+                                            <param id="0" name="Variable">soaljawab</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-11" name="Add to" sid="875686166976026" type="Idle">
+                                            <param id="0" name="Instance variable">nyawa</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="887283618304180" type="nyawa">
+                                            <param id="0" name="Frame number">Idle.nyawa</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="571821888948212">
+                                    <conditions>
+                                        <condition id="3" name="On touched object" sid="190488876701478" type="Touch">
+                                            <param id="0" name="Object">5B</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="181906433184508" type="Function">
+                                            <param id="0" name="Name">&quot;pop-up-in-salah5&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="219846176247304" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="583227611923791" type="Function">
+                                            <param id="0" name="Name">&quot;pop-up-out-salah5&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="784350172962091" type="Function">
+                                            <param id="0" name="Name">&quot;pop-out-quiz-5&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="617456823490908" type="System">
+                                            <param id="0" name="Layer">&quot;Quiz5&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="624262310608061" type="Audio">
+                                            <param id="0" name="Audio file">fail-144746</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="425366822164897" type="System">
+                                            <param id="0" name="Variable">jumlahSoal</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="772725297028166" type="System">
+                                            <param id="0" name="Variable">soaljawab</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-11" name="Add to" sid="406640166993329" type="Idle">
+                                            <param id="0" name="Instance variable">nyawa</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="491543241038867" type="nyawa">
+                                            <param id="0" name="Frame number">Idle.nyawa</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="532488593871602">
+                                    <conditions>
+                                        <condition id="3" name="On touched object" sid="589508244583249" type="Touch">
+                                            <param id="0" name="Object">5D</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="657358235427148" type="Function">
+                                            <param id="0" name="Name">&quot;pop-up-in-salah5&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="923179862504352" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="274161439969155" type="Function">
+                                            <param id="0" name="Name">&quot;pop-up-out-salah5&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="916250666058554" type="Function">
+                                            <param id="0" name="Name">&quot;pop-out-quiz-5&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="958072367752576" type="System">
+                                            <param id="0" name="Layer">&quot;Quiz5&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="707028116809608" type="Audio">
+                                            <param id="0" name="Audio file">fail-144746</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="334660690050695" type="System">
+                                            <param id="0" name="Variable">jumlahSoal</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="340806839475233" type="System">
+                                            <param id="0" name="Variable">soaljawab</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-11" name="Add to" sid="894910484663323" type="Idle">
+                                            <param id="0" name="Instance variable">nyawa</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="793503725596180" type="nyawa">
+                                            <param id="0" name="Frame number">Idle.nyawa</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-block sid="520267505040323">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="689831716465741" type="Idle">
+                    <param id="0" name="Instance variable">nyawa</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="640418163385411" type="System">
+                    <param id="0" name="Layer">&quot;gameOver&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-13" name="Set time scale" sid="246553880074499" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="551390203105754">
+            <conditions>
+                <condition id="3" name="On touched object" sid="225142091587561" type="Touch">
+                    <param id="0" name="Object">restart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="216824436376763" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="170173497038448">
+            <conditions>
+                <condition id="3" name="On touched object" sid="773143288169009" type="Touch">
+                    <param id="0" name="Object">tombolKeluarGameOver</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="741921248665341" type="System">
+                    <param id="0" name="Layout">lvlpage</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="316193223990034">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="732850770645785" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="230350330520591" type="tombolKeluarGameOver">
+                    <param id="0" name="Pin to">Sprite11</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="914065875988572" type="restart">
+                    <param id="0" name="Pin to">Sprite11</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

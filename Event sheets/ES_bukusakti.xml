@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES_bukusakti</name>
     <events>
+        <include>koinGlobal</include>
         <event-block sid="853978144967291">
             <conditions>
                 <condition id="3" name="On touched object" sid="282049939898648" type="Touch">
