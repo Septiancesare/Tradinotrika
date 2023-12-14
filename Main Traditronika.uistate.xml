@@ -18,7 +18,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="9">bukusakti</layout>
         <layout order="10">bsAceh_1</layout>
         <layout order="13">infopage</layout>
-        <event-sheet active="1" order="1">Game1_EV</event-sheet>
+        <event-sheet order="1">Game1_EV</event-sheet>
         <event-sheet order="3">ES_homepage</event-sheet>
         <event-sheet order="5">ES_lvlpage</event-sheet>
         <event-sheet order="7">ES_storypage</event-sheet>
@@ -26,7 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="12">ES_bsAceh1</event-sheet>
         <event-sheet order="14">ES_infopage</event-sheet>
         <event-sheet order="15">Sound</event-sheet>
-        <event-sheet order="16">koinGlobal</event-sheet>
+        <event-sheet active="1" order="16">koinGlobal</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
