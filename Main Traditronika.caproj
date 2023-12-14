@@ -1107,7 +1107,7 @@
         <event-sheet>ES_bukusakti.xml</event-sheet>
         <event-sheet>ES_bsAceh1.xml</event-sheet>
         <event-sheet>ES_infopage.xml</event-sheet>
-        <event-sheet>ES_GLobalLayout.xml</event-sheet>
+        <event-sheet>Sound.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="14" />
@@ -1135,6 +1135,8 @@
     </global-instances>
     <sounds-folder>
         <file name="backsound-gamelan.ogg" />
+        <file name="zapsplat_cartoon_boing_spring_jump_17682.ogg" />
+        <file name="zapsplat_multimedia_button_click_bright_003_92100.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

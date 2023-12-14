@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>ES_homepage</name>
     <events>
-        <include>ES_GLobalLayout</include>
+        <include>Sound</include>
         <event-block sid="525149020983393">
             <conditions>
                 <condition id="-9" inverted="1" name="Layer is visible" sid="549506230491024" type="System">
@@ -22,6 +22,12 @@
                         <action id="-2" name="Go to layout" sid="870913387014734" type="System">
                             <param id="0" name="Layout">lvlpage</param>
                         </action>
+                        <action id="0" name="Play" sid="437862634466914" type="Audio">
+                            <param id="0" name="Audio file">zapsplat_multimedia_button_click_bright_003_92100</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="747512179548764">
@@ -34,6 +40,12 @@
                         <action id="-2" name="Go to layout" sid="238743469564941" type="System">
                             <param id="0" name="Layout">bukusakti</param>
                         </action>
+                        <action id="0" name="Play" sid="336366423810014" type="Audio">
+                            <param id="0" name="Audio file">zapsplat_multimedia_button_click_bright_003_92100</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="534351266108383">
@@ -45,6 +57,12 @@
                     <actions>
                         <action id="-2" name="Go to layout" sid="352741847445268" type="System">
                             <param id="0" name="Layout">infopage</param>
+                        </action>
+                        <action id="0" name="Play" sid="324091623806765" type="Audio">
+                            <param id="0" name="Audio file">zapsplat_multimedia_button_click_bright_003_92100</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -72,6 +90,12 @@
                         <action id="-4" name="Set layer visible" sid="932841173558176" type="System">
                             <param id="0" name="Layer">&quot;popup&quot;</param>
                             <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="112812256499756" type="Audio">
+                            <param id="0" name="Audio file">zapsplat_multimedia_button_click_bright_003_92100</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -116,6 +140,12 @@
                         <action id="-4" name="Set layer visible" sid="324820282883055" type="System">
                             <param id="0" name="Layer">&quot;popup&quot;</param>
                             <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="272884152595280" type="Audio">
+                            <param id="0" name="Audio file">zapsplat_multimedia_button_click_bright_003_92100</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
