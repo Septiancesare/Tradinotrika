@@ -91,6 +91,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite6/" />
         <folder expanded="1" path="animation-folder/Sprite7/" />
         <folder expanded="1" path="animation-folder/Sprite8/" />
-        <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/nyawa/" />
+        <folder expanded="1" path="animation-folder/Soal1/" />
+        <folder expanded="1" path="animation-folder/Benar/" />
+        <folder expanded="1" path="animation-folder/Salah/" />
+        <folder expanded="1" path="animation-folder/1A/" />
+        <folder expanded="1" path="animation-folder/1B/" />
+        <folder expanded="1" path="animation-folder/1C/" />
+        <folder expanded="1" path="animation-folder/1D/" />
+        <folder expanded="1" path="animation-folder/petiQuiz/" />
     </folders-expanded>
 </c2uistate>
