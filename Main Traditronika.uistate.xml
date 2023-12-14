@@ -11,21 +11,21 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Game1_LO</layout>
-        <layout active="1" order="2">homepage</layout>
+        <layout order="2">homepage</layout>
         <layout order="4">lvlpage</layout>
         <layout order="6">storypage</layout>
         <layout order="8">Layout Contoh</layout>
         <layout order="9">bukusakti</layout>
         <layout order="10">bsAceh_1</layout>
         <layout order="13">infopage</layout>
-        <event-sheet order="1">Game1_EV</event-sheet>
+        <event-sheet active="1" order="1">Game1_EV</event-sheet>
         <event-sheet order="3">ES_homepage</event-sheet>
         <event-sheet order="5">ES_lvlpage</event-sheet>
         <event-sheet order="7">ES_storypage</event-sheet>
         <event-sheet order="11">ES_bukusakti</event-sheet>
         <event-sheet order="12">ES_bsAceh1</event-sheet>
         <event-sheet order="14">ES_infopage</event-sheet>
-        <event-sheet order="15">Sound</event-sheet>
+        <event-sheet order="15">ES_GLobalLayout</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -91,6 +91,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite6/" />
         <folder expanded="1" path="animation-folder/Sprite7/" />
         <folder expanded="1" path="animation-folder/Sprite8/" />
-        <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/nyawa/" />
+        <folder expanded="1" path="animation-folder/Soal1/" />
+        <folder expanded="1" path="animation-folder/Benar/" />
+        <folder expanded="1" path="animation-folder/Salah/" />
+        <folder expanded="1" path="animation-folder/1A/" />
+        <folder expanded="1" path="animation-folder/1B/" />
+        <folder expanded="1" path="animation-folder/1C/" />
+        <folder expanded="1" path="animation-folder/1D/" />
+        <folder expanded="1" path="animation-folder/petiQuiz/" />
     </folders-expanded>
 </c2uistate>

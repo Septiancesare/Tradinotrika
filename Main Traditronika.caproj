@@ -1051,8 +1051,13 @@
         <object-type name="txKoin" sid="563931365828053">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite9" sid="396875337690677">
+        <object-type name="nyawa" sid="396875337690677">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="666500098437258">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741338424695912" speed="0">
                     <frame duration="1" hotspotX="0.501393" hotspotY="0.508197" original-source="D:\aset game traditronika\ASET TOMBOL\18.png">
@@ -1083,6 +1088,154 @@
                     <frame duration="1" hotspotX="0.501393" hotspotY="0.508197" original-source="D:\aset game traditronika\ASET TOMBOL\21.png" />
                     <frame duration="1" hotspotX="0.501393" hotspotY="0.508197" original-source="D:\aset game traditronika\ASET TOMBOL\22.png" />
                     <frame duration="1" hotspotX="0.501393" hotspotY="0.508197" original-source="D:\aset game traditronika\ASET TOMBOL\23.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Soal1" sid="996709948366129">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="486966113935692">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="615656055245192" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\ZZZ Yosef\00 Koleyah\Semester 3\Praktikum Multimedia 1\ASET SOAL\soal no1.png">
+                        <collision-poly>
+                            <point x="0.0697917" y="0.124074" />
+                            <point x="0.5" y="0.0814815" />
+                            <point x="0.907292" y="0.164815" />
+                            <point x="0.925521" y="0.5" />
+                            <point x="0.911458" y="0.842593" />
+                            <point x="0.5" y="0.975926" />
+                            <point x="0.0239583" y="0.957407" />
+                            <point x="0.0166667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Benar" sid="478367558864124">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="292435451767866">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="991540651250718" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ASUS\Downloads\pop up jawaban benar.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.00108932" />
+                            <point x="1" y="0" />
+                            <point x="0.982838" y="0.994554" />
+                            <point x="0.5" y="0.998911" />
+                            <point x="0.00457659" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Salah" sid="249655064789678">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="682180684508312" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ASUS\Downloads\pop up jawaban salah.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.00108932" />
+                            <point x="1" y="0" />
+                            <point x="0.980549" y="0.992375" />
+                            <point x="0.5" y="0.998911" />
+                            <point x="0" y="0.986928" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="1A" sid="363191984112722">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="917720656816868">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="439194528251232" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="1B" sid="366710818006490">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="751271327522944">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="680526083639964" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="1C" sid="497267121102636">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="704633991253676">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="495422329432478" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="1D" sid="128562128312511">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="323630714792314">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="170711040126679" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="petiQuiz" sid="776391413149321">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Close" pingpong="0" repeatcount="1" repeatto="0" sid="528196308793918" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\ZZZ Yosef\00 Koleyah\Semester 3\Praktikum Multimedia 1\Pertemuan 8\Aset\30.png">
+                        <collision-poly>
+                            <point x="0.242593" y="0.242593" />
+                            <point x="0.5" y="0.0314815" />
+                            <point x="0.726852" y="0.273148" />
+                            <point x="0.902778" y="0.5" />
+                            <point x="0.916667" y="0.916667" />
+                            <point x="0.5" y="0.991667" />
+                            <point x="0.012963" y="0.987037" />
+                            <point x="0.0435185" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Open" pingpong="0" repeatcount="1" repeatto="0" sid="650547754589384" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\ZZZ Yosef\00 Koleyah\Semester 3\Praktikum Multimedia 1\Pertemuan 8\Aset\31.png">
+                        <collision-poly>
+                            <point x="0.194444" y="0.194444" />
+                            <point x="0.5" y="0.139815" />
+                            <point x="0.837037" y="0.162963" />
+                            <point x="0.97963" y="0.5" />
+                            <point x="0.833333" y="0.833333" />
+                            <point x="0.5" y="0.856481" />
+                            <point x="0.186111" y="0.813889" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
