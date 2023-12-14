@@ -25,7 +25,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="11">ES_bukusakti</event-sheet>
         <event-sheet order="12">ES_bsAceh1</event-sheet>
         <event-sheet order="14">ES_infopage</event-sheet>
-        <event-sheet order="15">ES_GLobalLayout</event-sheet>
+        <event-sheet order="15">Sound</event-sheet>
+        <event-sheet order="16">koinGlobal</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -100,5 +101,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/1C/" />
         <folder expanded="1" path="animation-folder/1D/" />
         <folder expanded="1" path="animation-folder/petiQuiz/" />
+        <folder expanded="1" path="animation-folder/Sprite9/" />
     </folders-expanded>
 </c2uistate>

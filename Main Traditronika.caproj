@@ -1139,6 +1139,11 @@
         </object-type>
         <object-type name="Salah" sid="249655064789678">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="302322687342954">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="682180684508312" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ASUS\Downloads\pop up jawaban salah.png">
@@ -1239,6 +1244,28 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite9" sid="199096556622946">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="490950930764576" speed="5">
+                    <frame duration="1" hotspotX="0.501235" hotspotY="0.5" original-source="D:\aset game traditronika\ASET TOMBOL\12.png">
+                        <collision-poly>
+                            <point x="0.0691358" y="0.0982143" />
+                            <point x="0.498765" y="0.00892857" />
+                            <point x="0.955556" y="0.00892857" />
+                            <point x="0.995062" y="0.491071" />
+                            <point x="0.955556" y="0.982143" />
+                            <point x="0.498765" y="0.982143" />
+                            <point x="0.0716049" y="0.883929" />
+                            <point x="0.00246914" y="0.491071" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txKoinn" sid="102983441628314">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1261,6 +1288,7 @@
         <event-sheet>ES_bsAceh1.xml</event-sheet>
         <event-sheet>ES_infopage.xml</event-sheet>
         <event-sheet>Sound.xml</event-sheet>
+        <event-sheet>koinGlobal.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="14" />
@@ -1290,6 +1318,13 @@
         <file name="backsound-gamelan.ogg" />
         <file name="zapsplat_cartoon_boing_spring_jump_17682.ogg" />
         <file name="zapsplat_multimedia_button_click_bright_003_92100.ogg" />
+        <file name="Bamboo-Jungle__-Calm-Soothing-Game-Music-by-HeatleyBros_MP3_160K_ (3).ogg" />
+        <file name="Euro-Factory__-Sneaky-Pirate-Adventure-Game-Music-by-HeatleyBros_MP3_128K_.ogg" />
+        <file name="Island-Village__-Tropical-Fun-Game-Music-by-HeatleyBros_MP3_128K_.ogg" />
+        <file name="foley_50_and_20_pence_peice_coins_put_down_on_surface-_2_.ogg" />
+        <file name="correct-6033.ogg" />
+        <file name="fail-144746.ogg" />
+        <file name="young-man-being-hurt-95628.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

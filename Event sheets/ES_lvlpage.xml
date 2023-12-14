@@ -13,6 +13,12 @@
                 <action id="-2" name="Go to layout" sid="418351857316749" type="System">
                     <param id="0" name="Layout">homepage</param>
                 </action>
+                <action id="0" name="Play" sid="540656213849056" type="Audio">
+                    <param id="0" name="Audio file">zapsplat_multimedia_button_click_bright_003_92100</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="745134944632625">

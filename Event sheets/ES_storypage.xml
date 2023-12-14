@@ -27,5 +27,25 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="995729519947258">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="603703046508849" type="System" />
+            </conditions>
+            <actions>
+                <action id="8" name="Set silent" sid="898204742206824" type="Audio">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="920083274171542">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="153789603108287" type="System" />
+            </conditions>
+            <actions>
+                <action id="8" name="Set silent" sid="868555301269108" type="Audio">
+                    <param id="0" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -5588,8 +5588,8 @@
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>
-                <x>1</x>
-                <y>1</y>
+                <x>0</x>
+                <y>0</y>
             </parallax>
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
@@ -5767,8 +5767,8 @@
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>
-                <x>1</x>
-                <y>1</y>
+                <x>0</x>
+                <y>0</y>
             </parallax>
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
@@ -5791,8 +5791,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>382</x>
-                        <y>-655</y>
+                        <x>570</x>
+                        <y>-299</y>
                         <z>0</z>
                         <width>322</width>
                         <height>317</height>
@@ -5810,11 +5810,14 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>739</x>
-                        <y>-659</y>
+                        <x>569</x>
+                        <y>-299</y>
                         <z>0</z>
                         <width>322</width>
                         <height>317</height>
@@ -5868,8 +5871,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>568</x>
-                        <y>-239</y>
+                        <x>570</x>
+                        <y>-217</y>
                         <z>0</z>
                         <width>592</width>
                         <height>412</height>
@@ -5989,6 +5992,24 @@
                     </world>
                 </instance>
             </instances>
+            <effects />
+        </layer>
+        <layer name="Quiz2" sid="762110733064888">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
             <effects />
         </layer>
     </layers>

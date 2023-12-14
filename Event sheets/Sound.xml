@@ -18,7 +18,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="656821823663466" type="Audio">
-                            <param id="0" name="Audio file">backsound-gamelan</param>
+                            <param id="0" name="Audio file">Island-Village__-Tropical-Fun-Game-Music-by-HeatleyBros_MP3_128K_</param>
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;lagu&quot;</param>
