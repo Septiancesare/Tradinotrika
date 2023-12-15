@@ -10,7 +10,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Game1_LO</layout>
+        <layout order="0">Game1_LO</layout>
         <layout order="2">homepage</layout>
         <layout order="4">lvlpage</layout>
         <layout order="6">storypage</layout>
@@ -18,6 +18,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="9">bukusakti</layout>
         <layout order="10">bsAceh_1</layout>
         <layout order="13">infopage</layout>
+        <layout active="1" order="17">bsJateng</layout>
         <event-sheet order="1">Game1_EV</event-sheet>
         <event-sheet order="3">ES_homepage</event-sheet>
         <event-sheet order="5">ES_lvlpage</event-sheet>
@@ -27,6 +28,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="14">ES_infopage</event-sheet>
         <event-sheet order="15">Sound</event-sheet>
         <event-sheet order="16">koinGlobal</event-sheet>
+        <event-sheet order="18">ES_bsJateng</event-sheet>
+        <event-sheet order="19">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -130,5 +133,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite11/" />
         <folder expanded="1" path="animation-folder/restart/" />
         <folder expanded="1" path="animation-folder/tombolKeluarGameOver/" />
+        <folder expanded="1" path="animation-folder/jateng1/" />
+        <folder expanded="1" path="animation-folder/jateng2/" />
+        <folder expanded="1" path="animation-folder/jateng3/" />
     </folders-expanded>
 </c2uistate>

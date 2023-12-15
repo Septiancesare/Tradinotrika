@@ -1786,6 +1786,57 @@
         <object-type name="Text2" sid="898262160891813">
             <plugin id="Text" />
         </object-type>
+        <object-type name="jateng1" sid="801898530791570">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="513975270012033" speed="5">
+                    <frame duration="1" hotspotX="0.490731" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\aset\jawa tengah\TRADITRONICA.png">
+                        <collision-poly>
+                            <point x="0.00218102" y="0.180233" />
+                            <point x="0.490731" y="0.00290698" />
+                            <point x="0.97928" y="0.180233" />
+                            <point x="0.981461" y="0.822674" />
+                            <point x="0.490731" y="0.997093" />
+                            <point x="0.00218102" y="0.819767" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jateng2" sid="483792596176154">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="133521763758578" speed="5">
+                    <frame duration="1" hotspotX="0.499445" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\aset\jawa tengah\TRADITRONICA (2).png">
+                        <collision-poly>
+                            <point x="0.00221976" y="0.180233" />
+                            <point x="0.499445" y="0.00290698" />
+                            <point x="0.99667" y="0.180233" />
+                            <point x="0.99667" y="0.819767" />
+                            <point x="0.499445" y="0.997093" />
+                            <point x="0.00221976" y="0.819767" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jateng3" sid="343035021286060">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="791497005832874" speed="5">
+                    <frame duration="1" hotspotX="0.492881" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\aset\jawa tengah\TRADITRONICA (3).png">
+                        <collision-poly>
+                            <point x="0.00219058" y="0.180233" />
+                            <point x="0.492881" y="0.00290698" />
+                            <point x="0.983571" y="0.180233" />
+                            <point x="0.984666" y="0.821221" />
+                            <point x="0.492881" y="0.997093" />
+                            <point x="0.00219058" y="0.819767" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1797,6 +1848,7 @@
         <layout>bukusakti.xml</layout>
         <layout>bsAceh_1.xml</layout>
         <layout>infopage.xml</layout>
+        <layout>bsJateng.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Game1_EV.xml</event-sheet>
@@ -1809,6 +1861,7 @@
         <event-sheet>ES_infopage.xml</event-sheet>
         <event-sheet>Sound.xml</event-sheet>
         <event-sheet>koinGlobal.xml</event-sheet>
+        <event-sheet>ES_bsJateng.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="14" />
