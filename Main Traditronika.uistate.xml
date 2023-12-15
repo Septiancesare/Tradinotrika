@@ -10,12 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Game1_LO</layout>
+        <layout active="1" order="0">Game1_LO</layout>
         <layout order="2">homepage</layout>
         <layout order="4">lvlpage</layout>
         <layout order="6">storypage</layout>
         <layout order="8">Layout Contoh</layout>
-        <layout active="1" order="9">bukusakti</layout>
+        <layout order="9">bukusakti</layout>
         <layout order="10">bsAceh_1</layout>
         <layout order="13">infopage</layout>
         <layout order="17">bsJateng</layout>

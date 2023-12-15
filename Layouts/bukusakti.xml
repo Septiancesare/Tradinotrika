@@ -73,13 +73,13 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txKoinn" uid="306">
+                <instance type="txKoin" uid="347">
                     <properties>
-                        <text></text>
+                        <text>0</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial Rounded MT Bold,-21,400,0</font>
-                        <color>255,153,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
+                        <font>Cooper Black,-32,400,0</font>
+                        <color>255,204,51</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
@@ -88,11 +88,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>996</x>
-                        <y>32</y>
+                        <x>992</x>
+                        <y>28</y>
                         <z>0</z>
-                        <width>200</width>
-                        <height>36</height>
+                        <width>85.379516602</width>
+                        <height>43.723220825</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
