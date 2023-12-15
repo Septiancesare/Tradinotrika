@@ -469,7 +469,7 @@
                 </instance>
                 <instance type="TextBukusakti" uid="51">
                     <properties>
-                        <text>SUMATERA UTARA</text>
+                        <text>SUMATERA BARAT</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Consolas,-37.6,700,0</font>
                         <color>255,204,51</color>

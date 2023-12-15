@@ -15,10 +15,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="4">lvlpage</layout>
         <layout order="6">storypage</layout>
         <layout order="8">Layout Contoh</layout>
-        <layout order="9">bukusakti</layout>
+        <layout active="1" order="9">bukusakti</layout>
         <layout order="10">bsAceh_1</layout>
         <layout order="13">infopage</layout>
-        <layout active="1" order="17">bsJateng</layout>
+        <layout order="17">bsJateng</layout>
         <event-sheet order="1">Game1_EV</event-sheet>
         <event-sheet order="3">ES_homepage</event-sheet>
         <event-sheet order="5">ES_lvlpage</event-sheet>
