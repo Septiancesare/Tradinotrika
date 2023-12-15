@@ -166,6 +166,33 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Text2" uid="334">
+                    <properties>
+                        <text>Haii, Aku adalah Dino, julukanku adalah Dino sang pemberani. Aku mempunyai tugas mengumpulkan koin dan rebut Buku Sakti. Aku butuh bantuan kalian agar aku bisa naik level menjadi lebih kuat dan mendapatkan semua Buku Sakti, jadi ayoo kita raih koin sebanyak-banyaknya!!!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Century Gothic,-24,700,1</font>
+                        <color>128,57,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>286</x>
+                        <y>124</y>
+                        <z>0</z>
+                        <width>497</width>
+                        <height>333</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
