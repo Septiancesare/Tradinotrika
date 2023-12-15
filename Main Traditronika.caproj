@@ -1871,6 +1871,120 @@
         <object-type name="TextBukusakti2" sid="682654638442012">
             <plugin id="Text" />
         </object-type>
+        <object-type name="gembok2" sid="400127485108980">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="943708662286070" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\14.png">
+                        <collision-poly>
+                            <point x="0.0407407" y="0.0407407" />
+                            <point x="0.5" y="0" />
+                            <point x="0.958333" y="0.0416667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.958333" y="0.958333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0416667" y="0.958333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gembok3" sid="424032083296663">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="196044471638164" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\14.png">
+                        <collision-poly>
+                            <point x="0.0407407" y="0.0407407" />
+                            <point x="0.5" y="0" />
+                            <point x="0.958333" y="0.0416667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.958333" y="0.958333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0416667" y="0.958333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gembok4" sid="323913782853070">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="184170880659086" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\14.png">
+                        <collision-poly>
+                            <point x="0.0407407" y="0.0407407" />
+                            <point x="0.5" y="0" />
+                            <point x="0.958333" y="0.0416667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.958333" y="0.958333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0416667" y="0.958333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gembok5" sid="899372038558194">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="997414575667443" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\14.png">
+                        <collision-poly>
+                            <point x="0.0407407" y="0.0407407" />
+                            <point x="0.5" y="0" />
+                            <point x="0.958333" y="0.0416667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.958333" y="0.958333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0416667" y="0.958333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gembok7" sid="732916803178345">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="707652956545692" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\14.png">
+                        <collision-poly>
+                            <point x="0.0407407" y="0.0407407" />
+                            <point x="0.5" y="0" />
+                            <point x="0.958333" y="0.0416667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.958333" y="0.958333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0416667" y="0.958333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gembok8" sid="778960816938323">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="424653479782067" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\14.png">
+                        <collision-poly>
+                            <point x="0.0407407" y="0.0407407" />
+                            <point x="0.5" y="0" />
+                            <point x="0.958333" y="0.0416667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.958333" y="0.958333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0416667" y="0.958333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

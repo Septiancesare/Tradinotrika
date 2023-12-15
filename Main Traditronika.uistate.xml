@@ -136,5 +136,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/jateng1/" />
         <folder expanded="1" path="animation-folder/jateng2/" />
         <folder expanded="1" path="animation-folder/jateng3/" />
+        <folder expanded="1" path="animation-folder/gembok2/" />
+        <folder expanded="1" path="animation-folder/gembok3/" />
+        <folder expanded="1" path="animation-folder/gembok4/" />
+        <folder expanded="1" path="animation-folder/gembok5/" />
+        <folder expanded="1" path="animation-folder/gembok7/" />
+        <folder expanded="1" path="animation-folder/gembok8/" />
     </folders-expanded>
 </c2uistate>
