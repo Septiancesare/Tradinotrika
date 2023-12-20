@@ -1985,6 +1985,33 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Macan" sid="628349777227145">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="449154098694950" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ASUS\Downloads\MACAN 1080.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="832503879613958">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="439275046981274" speed="5">
+                    <frame duration="1" hotspotX="0.438994" hotspotY="0.489083" original-source="C:\Users\ASUS\Downloads\MACAN.png">
+                        <collision-poly>
+                            <point x="0.027673" y="0.132096" />
+                            <point x="0.438994" y="0.0534935" />
+                            <point x="0.745912" y="0.222707" />
+                            <point x="0.757233" y="0.489083" />
+                            <point x="0.866667" y="0.860262" />
+                            <point x="0.438994" y="0.996725" />
+                            <point x="0.110692" y="0.774017" />
+                            <point x="0.036478" y="0.489083" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
