@@ -3,11 +3,13 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game1_EV</name>
     <events>
+        <variable constant="0" name="soalSalah" sid="148931291620608" static="0" type="number">0</variable>
+        <variable constant="0" name="soalBenar" sid="927607312346216" static="0" type="number">0</variable>
         <variable constant="0" name="soaljawab" sid="910938557074467" static="0" type="number">0</variable>
         <variable constant="0" name="jumlahSoal" sid="312855176026109" static="0" type="number">5</variable>
         <include>koinGlobal</include>
         <include>Sound</include>
-        <variable constant="0" name="koin" sid="292818719972316" static="0" type="number">0</variable>
+        <variable constant="0" name="koin" sid="292818719972316" static="0" type="number">1000</variable>
         <event-group description="" sid="551127123799601" title="Player Animation">
             <sub-events>
                 <event-block sid="977643309642960">
@@ -632,6 +634,10 @@
                             <param id="0" name="Variable">soaljawab</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="-10" name="Add to" sid="469070870454516" type="System">
+                            <param id="0" name="Variable">soalBenar</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="289950319914466">
@@ -680,6 +686,10 @@
                         </action>
                         <action id="5" name="Set frame" sid="316046833271811" type="nyawa">
                             <param id="0" name="Frame number">Idle.nyawa</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="554983438164098" type="System">
+                            <param id="0" name="Variable">soalSalah</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -730,6 +740,10 @@
                         <action id="5" name="Set frame" sid="381843607490090" type="nyawa">
                             <param id="0" name="Frame number">Idle.nyawa</param>
                         </action>
+                        <action id="-10" name="Add to" sid="515643671840903" type="System">
+                            <param id="0" name="Variable">soalSalah</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="593825587768412">
@@ -778,6 +792,10 @@
                         </action>
                         <action id="5" name="Set frame" sid="892148201092931" type="nyawa">
                             <param id="0" name="Frame number">Idle.nyawa</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="912748170645424" type="System">
+                            <param id="0" name="Variable">soalSalah</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -929,6 +947,10 @@
                     <param id="0" name="Variable">soaljawab</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-10" name="Add to" sid="903619848212637" type="System">
+                    <param id="0" name="Variable">soalBenar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="596310909095863">
@@ -977,6 +999,10 @@
                 </action>
                 <action id="5" name="Set frame" sid="374726491681003" type="nyawa">
                     <param id="0" name="Frame number">Idle.nyawa</param>
+                </action>
+                <action id="-10" name="Add to" sid="328824352914658" type="System">
+                    <param id="0" name="Variable">soalSalah</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
@@ -1027,6 +1053,10 @@
                 <action id="5" name="Set frame" sid="873540076449128" type="nyawa">
                     <param id="0" name="Frame number">Idle.nyawa</param>
                 </action>
+                <action id="-10" name="Add to" sid="257652846970209" type="System">
+                    <param id="0" name="Variable">soalSalah</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="226926228309164">
@@ -1076,6 +1106,10 @@
                 <action id="5" name="Set frame" sid="800445348956984" type="nyawa">
                     <param id="0" name="Frame number">Idle.nyawa</param>
                 </action>
+                <action id="-10" name="Add to" sid="474729230465334" type="System">
+                    <param id="0" name="Variable">soalSalah</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="639706548961852" title="pop-up-benarSalah2">
@@ -1120,6 +1154,10 @@
                                 </action>
                                 <action id="-10" name="Add to" sid="810162148865864" type="System">
                                     <param id="0" name="Variable">soaljawab</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="685720183032103" type="System">
+                                    <param id="0" name="Variable">soalBenar</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
@@ -1262,6 +1300,10 @@
                         <action id="5" name="Set frame" sid="272145547130796" type="nyawa">
                             <param id="0" name="Frame number">Idle.nyawa</param>
                         </action>
+                        <action id="-10" name="Add to" sid="530285765469460" type="System">
+                            <param id="0" name="Variable">soalSalah</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="398809948886087">
@@ -1311,6 +1353,10 @@
                         <action id="5" name="Set frame" sid="791303438961530" type="nyawa">
                             <param id="0" name="Frame number">Idle.nyawa</param>
                         </action>
+                        <action id="-10" name="Add to" sid="762638108277567" type="System">
+                            <param id="0" name="Variable">soalSalah</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="457869423816600">
@@ -1359,6 +1405,10 @@
                         </action>
                         <action id="5" name="Set frame" sid="317166079191678" type="nyawa">
                             <param id="0" name="Frame number">Idle.nyawa</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="838261875632327" type="System">
+                            <param id="0" name="Variable">soalSalah</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1557,6 +1607,10 @@
                                     <param id="0" name="Variable">soaljawab</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
+                                <action id="-10" name="Add to" sid="719934942664546" type="System">
+                                    <param id="0" name="Variable">soalBenar</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="546497438278297">
@@ -1605,6 +1659,10 @@
                                 </action>
                                 <action id="5" name="Set frame" sid="369298359494114" type="nyawa">
                                     <param id="0" name="Frame number">Idle.nyawa</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="303947584142295" type="System">
+                                    <param id="0" name="Variable">soalSalah</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1655,6 +1713,10 @@
                                 <action id="5" name="Set frame" sid="522873954342917" type="nyawa">
                                     <param id="0" name="Frame number">Idle.nyawa</param>
                                 </action>
+                                <action id="-10" name="Add to" sid="718099399094433" type="System">
+                                    <param id="0" name="Variable">soalSalah</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="983204086485730">
@@ -1703,6 +1765,10 @@
                                 </action>
                                 <action id="5" name="Set frame" sid="326721984060698" type="nyawa">
                                     <param id="0" name="Frame number">Idle.nyawa</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="422449009454969" type="System">
+                                    <param id="0" name="Variable">soalSalah</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1962,6 +2028,10 @@
                                             <param id="0" name="Variable">soaljawab</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
+                                        <action id="-10" name="Add to" sid="362555900852923" type="System">
+                                            <param id="0" name="Variable">soalBenar</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="707746011146498">
@@ -2010,6 +2080,10 @@
                                         </action>
                                         <action id="5" name="Set frame" sid="887283618304180" type="nyawa">
                                             <param id="0" name="Frame number">Idle.nyawa</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="836294462082056" type="System">
+                                            <param id="0" name="Variable">soalSalah</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2060,6 +2134,10 @@
                                         <action id="5" name="Set frame" sid="491543241038867" type="nyawa">
                                             <param id="0" name="Frame number">Idle.nyawa</param>
                                         </action>
+                                        <action id="-10" name="Add to" sid="851375826737414" type="System">
+                                            <param id="0" name="Variable">soalSalah</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="532488593871602">
@@ -2108,6 +2186,10 @@
                                         </action>
                                         <action id="5" name="Set frame" sid="793503725596180" type="nyawa">
                                             <param id="0" name="Frame number">Idle.nyawa</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="245924328459142" type="System">
+                                            <param id="0" name="Variable">soalSalah</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2178,6 +2260,193 @@
                 <action behavior="Pin" id="0" name="Pin to object" sid="914065875988572" type="restart">
                     <param id="0" name="Pin to">Sprite11</param>
                     <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="718967227069962">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="746067489743474" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="918937578689037" type="tombolHomeBintang">
+                    <param id="0" name="Pin to">Bintang</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="795353128859981" type="tombolLanjutBintang">
+                    <param id="0" name="Pin to">Bintang</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="568123487583629" type="System">
+                    <param id="0" name="Layer">&quot;PopUpBintang&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="741788780255304">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="254965890918849" type="System">
+                    <param id="0" name="Variable">soaljawab</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="344207469099379" type="System">
+                    <param id="0" name="Variable">soalBenar</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="725471969958825" type="Bintang">
+                    <param id="0" name="Animation">&quot;Bintang3&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-2" name="Set Y" sid="806365805144711" type="Bintang">
+                    <param id="0" name="Y">306</param>
+                </action>
+                <action id="-1" name="Set X" sid="908026688393806" type="Bintang">
+                    <param id="0" name="X">9530</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="574722896035922" type="System">
+                    <param id="0" name="Layer">&quot;PopUpBintang&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="209460223707945">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="956490156927104">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="306087071131058" type="System">
+                    <param id="0" name="Variable">soaljawab</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="750858008619421" type="System">
+                    <param id="0" name="Variable">soalBenar</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="293437606915841" type="Bintang">
+                    <param id="0" name="Animation">&quot;Bintang2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-2" name="Set Y" sid="554361563716733" type="Bintang">
+                    <param id="0" name="Y">306</param>
+                </action>
+                <action id="-1" name="Set X" sid="971340130101111" type="Bintang">
+                    <param id="0" name="X">9530</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="756043235830220" type="System">
+                    <param id="0" name="Layer">&quot;PopUpBintang&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="366334290851688">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="434501542718103">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="784865836924553" type="System">
+                    <param id="0" name="Variable">soaljawab</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="594214282374951" type="System">
+                    <param id="0" name="Variable">soalBenar</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="334724852348210" type="Bintang">
+                    <param id="0" name="Animation">&quot;Bintang1&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-2" name="Set Y" sid="560305416278574" type="Bintang">
+                    <param id="0" name="Y">306</param>
+                </action>
+                <action id="-1" name="Set X" sid="247211738420759" type="Bintang">
+                    <param id="0" name="X">9530</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="602304302041258" type="System">
+                    <param id="0" name="Layer">&quot;PopUpBintang&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="105214825390452">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="736336911803565">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="721150882908620" type="System">
+                    <param id="0" name="Variable">soaljawab</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="840835162501241" type="System">
+                    <param id="0" name="Variable">soalBenar</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="963570794883638" type="Bintang">
+                    <param id="0" name="Animation">&quot;Bintang0&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-2" name="Set Y" sid="110072152714229" type="Bintang">
+                    <param id="0" name="Y">306</param>
+                </action>
+                <action id="-1" name="Set X" sid="936144239483366" type="Bintang">
+                    <param id="0" name="X">9530</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="574992934433562" type="System">
+                    <param id="0" name="Layer">&quot;PopUpBintang&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="510712124082898">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="264531475679114">
+            <conditions>
+                <condition id="3" name="On touched object" sid="946254364524680" type="Touch">
+                    <param id="0" name="Object">tombolHomeBintang</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="961004053854860" type="System">
+                    <param id="0" name="Layout">homepage</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="493628846146817">
+            <conditions>
+                <condition id="3" name="On touched object" sid="896325161657003" type="Touch">
+                    <param id="0" name="Object">tombolLanjutBintang</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="913352813890089" type="System">
+                    <param id="0" name="Layout">lvlpage</param>
                 </action>
             </actions>
         </event-block>

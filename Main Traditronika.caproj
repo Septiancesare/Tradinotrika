@@ -2012,6 +2012,115 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Bintang" sid="525667553045768">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Bintang3" pingpong="0" repeatcount="1" repeatto="0" sid="228896812876808" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.515753" original-source="E:\semester 3\PraktikMultimedia1\aset\POP UP BINTANG\Bintang 3.png">
+                        <collision-poly>
+                            <point x="0.0125725" y="0.277713" />
+                            <point x="0.5" y="0.00466744" />
+                            <point x="0.987427" y="0.277713" />
+                            <point x="0.998066" y="0.515753" />
+                            <point x="0.989362" y="0.756126" />
+                            <point x="0.5" y="0.997666" />
+                            <point x="0.0106383" y="0.756126" />
+                            <point x="0.00193424" y="0.515753" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Bintang2" pingpong="0" repeatcount="1" repeatto="0" sid="458306314338467" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.515753" original-source="E:\semester 3\PraktikMultimedia1\aset\POP UP BINTANG\Bintang 2.png">
+                        <collision-poly>
+                            <point x="0.0125725" y="0.277713" />
+                            <point x="0.5" y="0.00466744" />
+                            <point x="0.987427" y="0.277713" />
+                            <point x="0.998066" y="0.515753" />
+                            <point x="0.989362" y="0.756126" />
+                            <point x="0.5" y="0.997666" />
+                            <point x="0.0106383" y="0.756126" />
+                            <point x="0.00193424" y="0.515753" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Bintang1" pingpong="0" repeatcount="1" repeatto="0" sid="513145701108627" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.514051" original-source="E:\semester 3\PraktikMultimedia1\aset\POP UP BINTANG\Bintang 1.png">
+                        <collision-poly>
+                            <point x="0.0125725" y="0.275176" />
+                            <point x="0.5" y="0.00234192" />
+                            <point x="0.987427" y="0.275176" />
+                            <point x="0.998066" y="0.514051" />
+                            <point x="0.989362" y="0.755269" />
+                            <point x="0.5" y="0.997658" />
+                            <point x="0.0106383" y="0.755269" />
+                            <point x="0.00193424" y="0.514051" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Bintang0" pingpong="0" repeatcount="1" repeatto="0" sid="297522495305534" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.514051" original-source="E:\semester 3\PraktikMultimedia1\aset\POP UP BINTANG\Bintang 0.png">
+                        <collision-poly>
+                            <point x="0.0125725" y="0.275176" />
+                            <point x="0.5" y="0.00234192" />
+                            <point x="0.987427" y="0.275176" />
+                            <point x="0.998066" y="0.514051" />
+                            <point x="0.989362" y="0.755269" />
+                            <point x="0.5" y="0.997658" />
+                            <point x="0.0106383" y="0.755269" />
+                            <point x="0.00193424" y="0.514051" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tombolHomeBintang" sid="551312548645769">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="608040146086222">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="776616013011585" speed="5">
+                    <frame duration="1" hotspotX="0.500463" hotspotY="0.500463" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\10.png">
+                        <collision-poly>
+                            <point x="0.0416281" y="0.0416281" />
+                            <point x="0.500463" y="0.000925069" />
+                            <point x="0.958372" y="0.0425532" />
+                            <point x="0.999075" y="0.500463" />
+                            <point x="0.957447" y="0.957447" />
+                            <point x="0.500463" y="0.999075" />
+                            <point x="0.0425532" y="0.958372" />
+                            <point x="0.000925069" y="0.500463" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tombolLanjutBintang" sid="827354879557365">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="952466961744421">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="994350115921802" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\semester 3\PraktikMultimedia1\AsetFull\Aset\7.png">
+                        <collision-poly>
+                            <point x="0.0731481" y="0.0731481" />
+                            <point x="0.5" y="0" />
+                            <point x="0.926852" y="0.0731481" />
+                            <point x="1" y="0.5" />
+                            <point x="0.926852" y="0.926852" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0731481" y="0.926852" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
